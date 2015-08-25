@@ -1,0 +1,51 @@
+//============================================================//
+// QUARKS
+// Variables and mixins.
+//============================================================//
+@import 'quarks/variables';
+@import 'quarks/mixins';
+@import 'quarks/flex-box';
+@import 'quarks/reset';
+
+//============================================================//
+// ATOMS
+// Targeting single element (ex. button, label, input)
+//============================================================//
+@import 'atoms/typography';
+@import 'atoms/buttons';
+@import 'atoms/layout';
+@import 'atoms/table';
+@import 'atoms/icons';
+@import 'atoms/nav';
+
+//============================================================//
+// MOLECULES
+// Targeting combination of atoms (ex. label + input).
+//============================================================//
+@import 'molecules/primary-nav';
+
+
+//============================================================//
+// ORGANISMS
+// Targeting combination of atoms &/or molecules to create a
+// reusable, independent block (ex. search form, modal)
+//============================================================//
+@import 'organisms/primary-header';
+@import 'organisms/primary-footer';
+
+// HOMEPAGE
+//------------------------------------------------------------
+
+
+// SECONDARY SECTION
+//------------------------------------------------------------//
+
+// TERTIARY SECTION
+//------------------------------------------//
+
+// QUATERNARY SECTION
+//-----------------------//
+
+// QUINTARY SECTION //
+
+//--> Note: this is a note/comment

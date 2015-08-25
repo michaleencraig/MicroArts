@@ -1,0 +1,89 @@
+// COLORS
+//------------------------------------------------------------//
+
+// GENERAL DEFINITIONS
+//------------------------------------------//
+$orange: #EfA900; //->Also appears in #EDAB20 and #EEAE30
+$fuschia: #D6083B;
+$green: #6EB43F;
+
+$white: #fff;
+$white-gray: #f4f4f4;
+$lightest-gray: #D9D9D9; 	//-> scroll icon;
+$lighter-gray: #BEBEBE; 	//-> placeholder text
+$light-gray: #ABABAB; 		//-> side menu text
+$gray: #898F94; 			//-> menu links
+$dark-gray: #868686; 		//-> bag/days text
+//-> #6E6E6E; 				//-> search icon (lg, product page)
+$darker-gray: #6F6F70; 		//-> bag/days text table headings
+$darkest-gray: #434343; 	//-> gradient end
+$black: #000;
+$font-color: #414042;
+
+$blue-gray: #6A747C; 		//-> footer text
+
+// ASSIGNMENTS
+//------------------------------------------//
+$clumping: #62A70F;
+$multi-cat: $fuschia;
+$lavender: #673BB8;
+$forest: #004631;
+$advanced-natural: #68ACE5;
+$advanced-natural-pine: #B5BF00;
+
+$color: #414042;
+
+
+$button-color: $orange;
+$button-hover-color: $orange;
+
+$link-color: $orange;
+$link-hover-color: $orange;
+
+
+// DIRECTORIES
+//------------------------------------------------------------//
+$img-dir: '../imgs';
+
+// TYPOGRAPHY
+//------------------------------------------------------------//
+$font-size: 16px;
+$line-height: 1;
+$font-family: "futura-pt", futura-pt, Futura, sans-serif;
+
+$light: 100;
+$normal: 400;
+$bold: 700;
+$extra-bold: 800;
+
+// LAYOUT
+//------------------------------------------------------------//
+$max-width: 1100px;
+$min-width: 320px;
+$content-padding: 20px;
+$sidebar-width: 275px;
+
+// BREAKPOINTS
+//------------------------------------------------------------//
+$xs-breakpoint: 480px;
+$sm-breakpoint: 640px;
+$md-breakpoint: 800px;
+$lg-breakpoint: 960px;
+$xl-breakpoint: 1024px;
+
+
+// MISC DEFAULTS
+//------------------------------------------------------------//
+$transition-speed: 250ms;
+$transition-ease: ease-in-out;
+
+
+// TERTIARY SECTION
+//------------------------------------------//
+
+// QUATERNARY SECTION
+//-----------------------//
+
+// QUINTARY SECTION //
+
+//--> Note: this is a note/comment

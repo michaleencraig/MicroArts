@@ -1,0 +1,23 @@
+nav {
+	ul{
+		list-style: none;
+	}
+}
+nav.sub-nav{
+			li{
+				a{
+					margin: 0 0 0 ($content-padding - 5);
+				}
+            }
+}
+
+@media(min-width: $md-breakpoint) {
+nav.sub-nav{
+			li{
+				a{
+					margin: 0;
+				}
+            }
+}
+
+}
