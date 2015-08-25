@@ -1,0 +1,33 @@
+.billboard{
+	position: relative;
+	overflow: hidden;
+    height: 305px;
+	background: url(../imgs/banner-bg.jpg) no-repeat 0 0;
+    position: center center;
+    background-size: cover;
+} 
+@media( min-width: $sm-breakpoint){
+  .billboard{
+    height: 407px;
+    }
+}
+@media( min-width: $md-breakpoint){
+  .billboard{
+    height: 509px;
+    }
+}
+@media( min-width: $lg-breakpoint){
+  .billboard{
+    height: 651px;
+    }
+}
+@media( min-width: $xl-breakpoint){
+  .billboard{
+    height: 814px;
+    }
+}
+@media( min-width: $xxl-breakpoint){
+  .billboard{
+    height: 1270px;
+    }
+}

@@ -11,6 +11,9 @@ html{
 	position: relative;
 	@include clearfix;
 }
+.main {
+  padding-top:101px;
+}
 
 @media( min-width: $lg-breakpoint){
 	.column{

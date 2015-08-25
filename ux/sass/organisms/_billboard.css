@@ -1,0 +1,6 @@
+.billboard {
+  position: relative;
+  overflow: hidden;
+  height: 1272px;
+  background: url(../imgs/banner-bg.jpg) no-repeat 0 0;
+}

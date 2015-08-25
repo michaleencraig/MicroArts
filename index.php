@@ -24,9 +24,13 @@
 
 
 		<header class="primary-header">
+            <div class="content"><a href="#" class="logo">MicroArts Creative Agency</a></div>
 		</header>
 
 		<div class="main" role="main">
+        <div class="billboard">
+            <div class="content">asdfas</div>
+        </div>
 
 		</div>
 

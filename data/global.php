@@ -15,5 +15,6 @@ $year = @date('Y');
 $current_url  = 'http://'.$host.$_SERVER['REQUEST_URI'] ;
 $styles_dir = $root_dir.'/ux/css/';
 $scripts_dir = $root_dir.'/ux/scripts/';
+$ux_img_dir =  $root_dir.'/ux/imgs/';
 $img_dir =  $root_dir.'/content/';
 ?>
