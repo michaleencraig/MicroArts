@@ -7,9 +7,10 @@ module.exports = function( grunt ) {
   grunt.initConfig({
     watch: {
       files: '../ux/sass/**/*.scss',
-      tasks: [ 'sass', 'cssmin' ]
+      tasks: [ 'sass', 'cssmin', 'minified' ]
     },
     sass: require( './custom_modules/sass' ).task,
-    cssmin: require( './custom_modules/cssmin' ).task
+    cssmin: require( './custom_modules/cssmin' ).task,
+    minified: require( './custom_modules/minified' ).task
   });
 };
