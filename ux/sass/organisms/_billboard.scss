@@ -27,6 +27,16 @@ section.load, .billboard .content {
     width: 150px;
     height: auto;
     @include center(true, true);
+    img {
+        position: absolute;
+        bottom: -75px;
+        left: 0px;
+        @include transition(all .5s ease);
+    }
+}
+.arrow.active img {
+    transform: rotate(180deg);
+    @include transition(all .5s ease);
 }
 .arrow-spinner {
     position: absolute;

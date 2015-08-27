@@ -50,6 +50,6 @@
 		<footer class="primary-footer">
 
 		</footer>
-
+        <script src="<?php echo $scripts_dir;?>scripts.min.js"></script>
 	</body>
 </html>
