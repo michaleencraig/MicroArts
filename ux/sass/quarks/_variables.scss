@@ -9,6 +9,7 @@ $green: #72afb6; //->Also appears in #EDAB20 and #EEAE30
 $white: #fff;
 $black: #000;
 $font-color: #fff;
+$floater: rgba(255,255,255,.07);
 
 
 // ASSIGNMENTS
@@ -55,6 +56,12 @@ $md-breakpoint: 800px;
 $lg-breakpoint: 1024px;
 $xl-breakpoint: 1280px;
 $xxl-breakpoint: 1920px;
+
+// BILLBOARD
+//------------------------------------------------------------//
+
+$box-one: -30%;
+$box-two: -35%;
 
 
 // MISC DEFAULTS

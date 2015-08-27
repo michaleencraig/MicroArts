@@ -29,7 +29,20 @@
 
 		<div class="main" role="main">
         <div class="billboard">
-            <div class="content">asdfas</div>
+            <div class="floater one-left"></div>
+            <div class="floater two-left"></div>
+            <div class="floater one-right"></div>
+            <div class="floater two-right"></div>
+            <div class="content">
+                <section class="load">
+                    <div class="arrow">
+                        <img src="ux/imgs/home/arrow.svg" alt="MicroArts Logo" />
+                    </div>
+                    <div class="arrow-spinner">
+                        <img src="ux/imgs/home/spinner.svg" alt="Arrows Spinning" />
+                    </div>
+                </section>
+            </div>
         </div>
 
 		</div>

@@ -1,0 +1,30 @@
+// CSS Animations Go Here
+
+@keyframes spinner {
+    0%   {transform: rotate(0deg); margin-left: -150px; margin-top: -150px;}
+    100% {transform: rotate(-1080deg); margin-left: -150px; margin-top: -150px;}
+}
+
+@keyframes wobble-left-one {
+    0%   {left: $box-one;}
+    50% {left: $box-one - random(10);}
+    100% {left: $box-one;}
+}
+
+@keyframes wobble-left-two {
+    0%   {left: $box-two;}
+    50% {left: $box-two - random(10);}
+    100% {left: $box-two;}
+}
+
+@keyframes wobble-right-one {
+    0%   {right: $box-one;}
+    50% {right: $box-one - random(10);}
+    100% {right: $box-one;}
+}
+
+@keyframes wobble-right-two {
+    0%   {right: $box-two;}
+    50% {right: $box-two - random(10);}
+    100% {right: $box-two;}
+}
