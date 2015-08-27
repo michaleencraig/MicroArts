@@ -7,11 +7,14 @@ module.exports = function( grunt ) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
 
   grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
     uglify: {
-      my_target: {
-        files: {
-          '../ux/js/scripts.min.js': ['../ux/js/**/*.js']
-        }
+      options: {
+           banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' + '<%= grunt.template.today("yyyy-mm-dd") %> */'
+      },
+      build: {
+        src: '../ux/script_src/**/*.js',
+        dest: '../ux/js/scripts.min.js'
       }
     },
     watch: {

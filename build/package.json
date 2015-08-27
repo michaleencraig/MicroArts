@@ -1,7 +1,7 @@
 {
-  "name": "grunt-sass-cssmin",
+  "name": "MicroArts Rebuild",
   "private": "true",
-  "description": "Sass & CSS minify with Grunt JS",
+  "description": "SASS, CSS Minify, and JS Minify",
   "version": "0.0.1",
   "main": "gruntfile.js",
   "devDependencies": {
