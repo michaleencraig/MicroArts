@@ -5,6 +5,9 @@ body {
 	@include rem('font-size', $font-size);
 	font-family: $font-family;
 }
+p {
+    color: $white;
+}
 a{
 	color: $link-color;
 	@include transition(all $transition-speed $transition-ease);

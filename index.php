@@ -37,6 +37,7 @@
                 <section class="load">
                     <div class="arrow">
                         <img src="ux/imgs/home/arrow.svg" alt="MicroArts Logo" />
+                        <p class="fade-down">Scroll</p>
                     </div>
                     <div class="arrow-spinner">
                         <img src="ux/imgs/home/spinner.svg" alt="Arrows Spinning" />
