@@ -24,13 +24,13 @@ section.load, .billboard .content {
 }
 .arrow {
     position: absolute;
-    width: 150px;
+    width: $arrow-size / 2;
     height: auto;
     @include center(true, true);
     @include transition(all .5s ease);
     img {
         position: absolute;
-        bottom: -75px;
+        bottom: -($arrow-size / 4);
         left: 0px;
         @include transition(all .5s ease);
     }
@@ -46,14 +46,26 @@ section.load, .billboard .content {
 }
 .arrow-spinner {
     position: absolute;
-    width: 300px;
+    width: $arrow-size;
     height: auto;
     @include center(true, true);
     animation-name: spinner;
     animation-timing-function: cubic-bezier(.42, 0, .58, 1);
-    animation-delay: .5s;
-    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-duration: 2s;
     @include transition(all .5s ease);
+}
+.arrow.shrink.active {
+    width: $arrow-size / 6;
+    height: auto;
+    bottom: 20px;
+    @include transition(all .5s ease);
+}
+.arrow-spinner.shrink.active {
+    @extend .arrow.shrink.active;
+    width: $arrow-size / 3;
+    top: inherit;
+    height: width;
 }
 .one-left {
     animation-name: wobble-left-one;
