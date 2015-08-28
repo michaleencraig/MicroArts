@@ -1,14 +1,35 @@
 //Scripts go in here
 //To render a minified version, run cd /Users/seancrater/MicroArts/build then grunt uglify
+var scroll_position = window.pageYOffset;
 
-// Let's start some functions
+$(document).ready(function(){
+    
+});
+
 $(window).scroll(function(){
-    var h = $(window).height();
-    var y = $(window).scrollTop();
-    if( y > (h*.075) ){
-        $('div.arrow, div.arrow-spinner').addClass('active');
+    $('.arrow').addClass('active');
+});
+
+// Detect when animation ends
+function whichAnimationEvent(){
+  var t,
+      el = document.createElement("fakeelement");
+  var animations = {
+    "animation"      : "animationend",
+    "OAnimation"     : "oAnimationEnd",
+    "MozAnimation"   : "animationend",
+    "WebkitAnimation": "webkitAnimationEnd"
+  }
+  for (t in animations){
+    if (el.style[t] !== undefined){
+      return animations[t];
     }
-    else {
-        $('div.arrow, div.arrow-spinner').removeClass('active');
-    }
+  }
+}
+var animationEvent = whichAnimationEvent();
+$(window).scroll(function(){
+  $('.arrow-spinner').one(animationEvent,
+  function(event) {
+    // Do something when the animation ends
+  });
 });
