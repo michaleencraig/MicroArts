@@ -2,7 +2,12 @@
 
 @keyframes spinner {
     0%   {transform: rotate(0deg); margin-left: -150px; margin-top: -150px;}
-    100% {transform: rotate(-1080deg); margin-left: -150px; margin-top: -150px;}
+    100% {transform: rotate(-720deg); margin-left: -150px; margin-top: -150px;}
+}
+
+@keyframes spinner-small {
+    0%   {transform: rotate(0deg); margin-left: -75px; margin-top: -75px;}
+    100% {transform: rotate(-720deg); margin-left: -75px; margin-top: -75px;}
 }
 
 @keyframes wobble-left-one {

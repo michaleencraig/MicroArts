@@ -72,8 +72,8 @@ section.load, .billboard .content {
     top: 30%;
     animation-name: spinner;
     animation-timing-function: cubic-bezier(.42, 0, .58, 1);
-    animation-delay: 0s;
-    animation-duration: 2s;
+    animation-delay: .25s;
+    animation-duration: 1.5s;
     @include transition(all .5s ease);
     .scroll {
         display: none;
@@ -86,7 +86,7 @@ section.load, .billboard .content {
     top: 50%;
     @include transition(all .5s ease);
     img {
-        transform: rotate(180deg);
+        transform: rotate(-180deg);
         @include transition(all .5s ease);
     }
 }
@@ -106,51 +106,114 @@ section.load, .billboard .content {
 }
 .one-left {
     animation-name: wobble-left-one;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 .two-left {
     top: 30%;
     animation-name: wobble-left-two;
-    animation-duration: 3s;
+    animation-duration: 12s;
     animation-iteration-count: infinite;
 }
 
 .one-right {
+    top: 20%;
     animation-name: wobble-right-one;
-    animation-duration: 4s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 .two-right {
-    top: -5%;
+    top: -10%;
     animation-name: wobble-right-two;
-    animation-duration: 3s;
+    animation-duration: 13s;
     animation-iteration-count: infinite;
 }
 
-
-@media( min-width: $sm-breakpoint){
-  .billboard{
-    height: 407px;
+@media(min-width: $xxs-breakpoint){
+    .arrow {
+        width: $arrow-size / 4;
+        img {
+            bottom: -($arrow-size / 8);
+        }
+    }
+    .arrow-spinner {
+        animation-name: spinner-small;
+        width: $arrow-size / 2;
+        @include center(true, true);
+        top: 30%;
+    }
+    .arrow.shrink {
+        width: $arrow-size / 12;
+    }
+    .arrow-spinner.shrink {
+        width: $arrow-size / 6;
+        top: 81%;
     }
 }
-@media( min-width: $md-breakpoint){
-  .billboard{
-    height: 509px;
+@media(min-width: $xs-breakpoint){ 
+}
+@media(min-width: $sm-breakpoint){
+    .billboard{
+        height: 407px;
+    }
+    section.second-slide {
+        bottom: 35%;
+    }
+    section.first-slide.shrink {
+        bottom: 60%;
+    }
+    .arrow-spinner.shrink, .arrow.shrink {
+        top: 37%;
+    }
+    .arrow-spinner.shrink {
+        top: 77%;
     }
 }
-@media( min-width: $lg-breakpoint){
-  .billboard{
-    height: 651px;
+@media(min-width: $md-breakpoint){
+    .billboard{
+        height: 509px;
+    }
+    .arrow {
+        width: $arrow-size / 2;
+        img {
+            bottom: -($arrow-size / 4);
+        }
+    }
+    .arrow-spinner {
+        width: $arrow-size;
+        animation-name: spinner;
+    }
+    .arrow.shrink {
+        width: $arrow-size / 6;
+    }
+    .arrow-spinner.shrink {
+        width: $arrow-size / 3;
+    }
+    .arrow-spinner.shrink, .arrow.shrink {
+        top: 45%;
+    }
+    .arrow-spinner.shrink {
+        top: 80%;
     }
 }
-@media( min-width: $xl-breakpoint){
-  .billboard{
-    height: 814px;
+@media(min-width: $lg-breakpoint){
+    .billboard{
+        height: 651px;
+    }
+    section.second-slide {
+        bottom: 25%;
+    }
+    .arrow-spinner.shrink, .arrow.shrink {
+        top: 58%;
+    }
+    .arrow-spinner.shrink {
+        top: 85%;
     }
 }
-@media( min-width: $xxl-breakpoint){
-  .billboard{
-    height: 1270px;
+@media(min-width: $xl-breakpoint){
+    .billboard{
+        height: 814px;
     }
+}
+@media(min-width: $xxl-breakpoint){
 }

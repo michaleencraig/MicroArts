@@ -10,7 +10,7 @@
         h2 {
 	        position: absolute;
     	    z-index: 1;
-    	    top: 0px;
+    	    top: 20px;
         	left: 60px;
             max-width: 40%;
             text-transform: uppercase;
@@ -29,6 +29,7 @@
 	        left: 60px;
             max-width: 40%;
 			@include rem('line-height',20px);
+            color: #a2a2a2;
         }
         img.product {
             max-width: 50%;
@@ -239,7 +240,7 @@
         p {
     	    position: absolute;
     	    z-index: 1;
-        	top: 200px;
+        	top: 210px;
 	        left: 60px;
             max-width: 40%;
 			@include rem('line-height',20px);

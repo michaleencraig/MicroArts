@@ -34,11 +34,8 @@ $img-dir: '../imgs';
 //------------------------------------------------------------//
 $font-size: 16px;
 $line-height: 1;
-<<<<<<< HEAD
-$font-family: 'Lato', sans-serif;
-=======
 $font-family: 'Lato', 'Helvetica', sans-serif;
->>>>>>> 589f14052e5117b290f4ba8c2ded3bde4334598d
+
 
 $light: 100;
 $normal: 400;
@@ -48,12 +45,13 @@ $extra-bold: 800;
 // LAYOUT
 //------------------------------------------------------------//
 $max-width: 2000px;
-$min-width: 320px;
+$min-width: auto;
 $content-padding: 20px;
 $sidebar-width: 275px;
 
 // BREAKPOINTS
 //------------------------------------------------------------//
+$xxs-breakpoint: 1px;
 $xs-breakpoint: 480px;
 $sm-breakpoint: 640px;
 $md-breakpoint: 800px;
