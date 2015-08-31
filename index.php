@@ -30,7 +30,7 @@
 		</header>
 
 		<div class="main" role="main">
-        <div class="billboard">
+        <div class="billboard opening-animation">
             <div class="floater one-left"></div>
             <div class="floater two-left"></div>
             <div class="floater one-right"></div>

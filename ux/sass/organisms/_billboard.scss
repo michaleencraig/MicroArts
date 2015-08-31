@@ -8,6 +8,23 @@
     background-size: cover;
 }
 
+.opening-animation {
+    @media( min-width: $xxs-breakpoint){
+        font-size: .225rem;
+    }
+    @media( min-width: $xs-breakpoint){
+            font-size: .35rem;
+    }
+    @media( min-width: $md-breakpoint){
+            font-size: .5rem;
+    }
+    @media( min-width: $lg-breakpoint){
+            font-size: .75rem;
+    }
+    @media( min-width: $xl-breakpoint){
+            font-size: 1rem;
+    }
+}
 
 // Homepage Animation Section
 .floater {
