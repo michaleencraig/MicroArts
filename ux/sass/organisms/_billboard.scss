@@ -38,12 +38,6 @@ section.load, .billboard .content {
         text-transform: uppercase;
     }
 }
-.arrow.active {
-    img {
-        transform: rotate(180deg);
-        @include transition(all .5s ease);
-    }
-}
 .arrow-spinner {
     position: absolute;
     width: $arrow-size;
@@ -55,14 +49,18 @@ section.load, .billboard .content {
     animation-duration: 2s;
     @include transition(all .5s ease);
 }
-.arrow.shrink.active {
+.arrow.shrink {
     width: $arrow-size / 6;
     height: auto;
     bottom: 20px;
     @include transition(all .5s ease);
+    img {
+        transform: rotate(180deg);
+        @include transition(all .5s ease);
+    }
 }
-.arrow-spinner.shrink.active {
-    @extend .arrow.shrink.active;
+.arrow-spinner.shrink {
+    @extend .arrow.shrink;
     width: $arrow-size / 3;
     top: inherit;
     height: width;

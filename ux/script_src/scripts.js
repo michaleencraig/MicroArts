@@ -15,6 +15,6 @@ $(window).scroll(function(){
 });
 
 // Detect when animation ends
-$('.arrow-spinner').on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(){
+$('.arrow-spinner').delay(1000).on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(){
     $('.arrow, .arrow-spinner').addClass('shrink');
 });
