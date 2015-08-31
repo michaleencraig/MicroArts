@@ -4,7 +4,7 @@
 //============================================================//
 @import 'quarks/variables';
 @import 'quarks/mixins';
-@import 'quarks/flex-box';
+@import 'quarks/flex-box';                     
 @import 'quarks/reset';
 
 //============================================================//
@@ -37,7 +37,8 @@
 // HOMEPAGE
 //------------------------------------------------------------
 
-	@import 'organisms/billboard';
+@import 'organisms/billboard';
+@import 'organisms/portfolio';
 
 
 // SECONDARY SECTION
