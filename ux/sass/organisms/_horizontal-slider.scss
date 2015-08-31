@@ -1,0 +1,232 @@
+.horizontal-slider {
+  color: #4a7997;
+/******************************** WBCL ********************************/
+.iS-Item {
+    h2 {
+	    position: absolute;
+    	z-index: 1;
+	    top: 0px;
+    	left: 60px;
+	    line-height: 80px;
+        max-width: 40%;
+        text-transform: uppercase;
+        font-size: 100px;
+        font-weight: normal;
+    }
+    h2 span {
+        font-weight: 100;
+        font-size: 60px;
+    }
+    p {
+    	position: absolute;
+	    z-index: 1;
+    	top: 200px;
+	    left: 60px;
+        max-width: 40%;
+    }
+    img.product {
+        max-width: 50%;
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        top: 200px;
+        &.healbe {
+            top: 120px;
+        }
+        &.microarts {
+            max-width: 36%;
+            right: 100px;
+            top: 20px;
+        }
+        &.finsix {
+            top: 80px;
+        }
+        &.badlab {
+            max-width: 35%;
+            right: 100px;
+            top: 145px;
+        }
+    }
+    img.logo {
+        max-width: 20%;
+        position: absolute;
+        z-index: 1;
+        right: 160px;
+        top: 80px;
+        &.healbe{
+            top: 40px;
+        }
+        &.finsix{
+            max-width: 18%;
+            right: 200px;
+            top: 25px;
+        }
+        &.badlab{
+            max-width: 18%;
+            right: 200px;
+            top: 25px;
+        }
+    }
+    img.btn {
+        max-width: 30%;
+        position: absolute;
+        z-index: 1;
+        left: 60px;
+        top: 340px;
+    }
+}
+/******************************** THUMBNAILS ********************************/
+.iS.iS-SkinThumbnails {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	margin-bottom: 100px;
+}
+.iS-SkinThumbnails .iS-Commands {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+}
+.iS-SkinThumbnails .iS-Content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top:0px;
+}
+.iS-SkinThumbnails .iS-Items {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+}
+.iS-SkinThumbnails .iS-Item {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+}
+.iS-SkinThumbnails .iS-Previous {
+	position: absolute;
+	z-index: 3;
+	cursor: pointer;
+	text-align: center;
+	height: 110px;
+	width: 10%;
+	left: 0%;
+	bottom: 0;
+	line-height: 108px;
+	font-size: 4em;
+}
+.iS-SkinThumbnails .iS-Next {
+	position: absolute;
+	z-index: 3;
+	cursor: pointer;
+	text-align: center;
+	height: 110px;
+	width: 10%;
+	right: 0%;
+	bottom: 0;
+	line-height: 108px;
+	font-size: 4em;
+}
+.iS-SkinThumbnails .iS-Loopline {
+	position: absolute;
+	z-index: 4;
+	width: 100%;
+	height: 5px;
+	left: 0px;
+	bottom: 110px;
+}
+.iS-SkinThumbnails .iS-Dots {
+	position: absolute;
+	z-index: 3;
+	text-align: center;
+	left: 10%;
+	bottom: 0;
+	width: 80%;
+	height: 90px;
+	text-align: center;
+	overflow: hidden;
+}
+.iS-SkinThumbnails .iS-Dot {
+	position: absolute;
+	z-index: 3;
+	cursor: pointer;
+    width: 180px;
+    height: 90px;
+    background: url(../imgs/home/thumbs/wbcl.png) no-repeat 0 0;
+    text-indent: -5000px;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.iS-SkinThumbnails .iS-Dot.healbe {
+    background: url(../imgs/home/thumbs/healbe.png) no-repeat 0 0;
+    left: 30px;
+}
+.iS-SkinThumbnails .iS-Dot.microarts {
+    background: url(../imgs/home/thumbs/microarts.png) no-repeat 0 0;
+    left: 60px;
+}
+.iS-SkinThumbnails .iS-Dot.finsix {
+    background: url(../imgs/home/thumbs/finsix.png) no-repeat 0 0;
+    left: 110px;
+}
+.iS-SkinThumbnails .iS-Dot.badlab {
+    background: url(../imgs/home/thumbs/badlab.png) no-repeat 0 0;
+    left: 120px;
+}
+.iS-SkinThumbnails .iS-Dotactive, .iS-SkinThumbnails .iS-Dot.healbe.iS-Dotactive, .iS-SkinThumbnails .iS-Dot.microarts.iS-Dotactive, .iS-SkinThumbnails .iS-Dot.finsix.iS-Dotactive, .iS-SkinThumbnails .iS-Dot.badlab.iS-Dotactive{
+    background-position: 0 -90px;
+}
+.iS-SkinThumbnails .iS-Dotactive:after {
+	opacity: 1;
+}
+@media( min-width: 1024px ){
+
+}
+/*Responsive   */
+@media (min-width: 0px) and (max-width: 499px) {
+	.iS.iS-SkinThumbnails  {
+		width: 100%;
+		height: 480px;
+	}
+	.iS-SkinThumbnails .iS-Next, .iS-SkinThumbnails .iS-Previous {
+		width: 50%;
+	}
+	.iS-SkinThumbnails .iS-Dots {
+		display: none;
+	}
+}
+@media (min-width: 500px) and (max-width: 767px) {
+	.iS.iS-SkinThumbnails  {
+		width: 100%;
+		height: 568px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.iS.iS-SkinThumbnails  {
+		width: 100%;
+		height: 668px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px){
+	.iS.iS-SkinThumbnails  {
+		width: 100%;
+		height: 700px;
+	}
+}
+@media (min-width: 1200px) {
+	.iS.iS-SkinThumbnails  {
+		width: 100%;
+		height: 700px;
+	}
+}
+}
