@@ -41,8 +41,6 @@ table {
 body {
   font-size: 16px;
   font-size: 1rem;
-  line-height: 16px;
-  line-height: 1rem;
   font-family: "Lato", "Helvetica", sans-serif;
   color: #fff;
 }
@@ -214,7 +212,7 @@ nav.sub-nav li a {
     left: -30%;
   }
   50% {
-    left: -39%;
+    left: -38%;
   }
   100% {
     left: -30%;
@@ -226,7 +224,7 @@ nav.sub-nav li a {
     left: -35%;
   }
   50% {
-    left: -41%;
+    left: -43%;
   }
   100% {
     left: -35%;
@@ -238,7 +236,7 @@ nav.sub-nav li a {
     right: -30%;
   }
   50% {
-    right: -33%;
+    right: -32%;
   }
   100% {
     right: -30%;
@@ -250,7 +248,7 @@ nav.sub-nav li a {
     right: -35%;
   }
   50% {
-    right: -43%;
+    right: -38%;
   }
   100% {
     right: -35%;
