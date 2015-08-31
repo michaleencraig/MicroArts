@@ -18,8 +18,12 @@
         <link rel="stylesheet" href="<?php echo $styles_dir;?>font-awesome.min.css" type="text/css" media="all" />
         <link rel="stylesheet" href="<?php echo $styles_dir;?>loading-bars.css" type="text/css" media="all" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
-
+        <script type="text/javascript" src="<?php echo $scripts_dir;?>svgmagic.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('img').svgmagic();
+            });
+        </script>
 	</head>
 	<body class="home">
 
