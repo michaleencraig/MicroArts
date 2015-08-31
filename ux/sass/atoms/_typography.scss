@@ -3,7 +3,6 @@ html{
 	//font-size: 62.5%;
 }
 body {
-	@include rem('font-size', $font-size);
 	font-family: $font-family;
     color: $white;
 }
@@ -44,4 +43,38 @@ sup{
 	top: -.25em;
 	position: relative;
 	font-size: .85em;
+}
+
+@media( min-width: $xxs-breakpoint){
+    body {
+        font-size: .225rem;
+    }
+}
+@media( min-width: $xs-breakpoint){
+    body {
+        font-size: .35rem;
+    }
+}
+@media( min-width: $sm-breakpoint){
+    body {
+        font-size: .45rem;
+    }
+}
+@media( min-width: $md-breakpoint){
+    body {
+        font-size: .5rem;
+    }
+}
+@media( min-width: $lg-breakpoint){
+    body {
+        font-size: .75rem;
+    }
+}
+@media( min-width: $xl-breakpoint){
+    body {
+        font-size: 1rem;
+    }
+}
+@media( min-width: $xxl-breakpoint){
+  
 }

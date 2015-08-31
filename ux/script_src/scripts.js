@@ -14,9 +14,13 @@
 //    }
 //});
 
+$(document).ready(function(){
+    $('section.first-slide').addClass('animate-down');
+});
+
 // Detect when animation ends
 $('.arrow-spinner').on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(){
     setTimeout(function(){
         $('.arrow, .arrow-spinner, section.first-slide, section.second-slide').addClass('shrink');
-    }, 3000);
+    }, 1500);
 });
