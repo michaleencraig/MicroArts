@@ -34,6 +34,13 @@
             <div class="floater one-right"></div>
             <div class="floater two-right"></div>
             <div class="content">
+                <section class="first-slide">
+                    <h2 class="small">Create Your</h2>
+                    <h2 class="large">Brand Revolution</h2>
+                </section>
+                <section class="second-slide">
+                    <h3 class="small">Strategy, Design, and Communications<br />to reinvent your place in the market.</h3>
+                </section>
                 <section class="load">
                     <div class="arrow">
                         <img src="ux/imgs/home/arrow.svg" alt="MicroArts Logo" />
@@ -41,6 +48,7 @@
                     </div>
                     <div class="arrow-spinner">
                         <img src="ux/imgs/home/spinner.svg" alt="Arrows Spinning" />
+                        <span class="scroll">Scroll</span>
                     </div>
                 </section>
             </div>

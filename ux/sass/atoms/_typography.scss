@@ -5,6 +5,7 @@ html{
 body {
 	@include rem('font-size', $font-size);
 	font-family: $font-family;
+    color: $white;
 }
 p {
     color: $white;
@@ -23,6 +24,18 @@ strong, b{
 }
 h1, h2, h3, h4, h5, h6{
 	text-transform: uppercase;
+}
+h2.small {
+    font-size: 3.5em;
+    font-weight: 100;
+}
+h2.large {
+    font-size: 7.5em;
+    font-weight: 300;
+}
+h3.small {
+    font-weight: 300;
+    font-size: 1.75em;
 }
 em, i{
 	font-style: italic;

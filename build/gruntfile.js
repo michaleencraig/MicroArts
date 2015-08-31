@@ -21,7 +21,7 @@ module.exports = function( grunt ) {
     watch: {
       css: {
         files: '../ux/sass/**/*.scss',
-        tasks: [ 'sass', 'cssmin', 'postcss', 'uglify' ]
+        tasks: [ 'sass', 'cssmin', 'postcss' ]
       },
     },
     postcss: {
