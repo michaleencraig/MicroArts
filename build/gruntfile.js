@@ -29,7 +29,7 @@ module.exports = function( grunt ) {
             map: true,
             processors: [
                 require('autoprefixer-core')({
-                    browsers: ['last 2 versions']
+                    browers: ['> 0.5%', 'last 2 versions', 'Firefox ESR', 'Opera 12.1', 'ie 8', 'ie 9', '> 1%']
                 })
             ]
         },
