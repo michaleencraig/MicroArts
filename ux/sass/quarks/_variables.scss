@@ -34,7 +34,11 @@ $img-dir: '../imgs';
 //------------------------------------------------------------//
 $font-size: 16px;
 $line-height: 1;
+<<<<<<< HEAD
 $font-family: 'Lato', sans-serif;
+=======
+$font-family: 'Lato', 'Helvetica', sans-serif;
+>>>>>>> 589f14052e5117b290f4ba8c2ded3bde4334598d
 
 $light: 100;
 $normal: 400;
@@ -62,6 +66,8 @@ $xxl-breakpoint: 1920px;
 
 $box-one: -30%;
 $box-two: -35%;
+
+$arrow-size: 300px;
 
 
 // MISC DEFAULTS

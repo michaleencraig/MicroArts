@@ -84,17 +84,41 @@
 	-o-transition: $transition;
 	transition: $transition;
 }
+
+@mixin fade-before($fade-position, $fade: true) {
+    @if ($fade) {
+        position: relative;
+        opacity: 0;
+        top: $fade-position;
+        @include transition($transition-speed all);
+    } @else {
+    }
+}
+
+@mixin fade-down($fade: true, $down: true) {
+    @if ($fade and $down) {
+        position: relative;
+        opacity: 1;
+        top: 0;
+        @include transition($transition-speed all);
+    }
+}
+
 @mixin center($horizontal: true, $vertical: true) {
-  position: absolute;
-  @if ($horizontal and $vertical) {
+    position: absolute;
+    @if ($horizontal and $vertical) {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  } @else if ($horizontal) {
+    } @else if ($horizontal) {
     left: 50%;
     transform: translate(-50%, 0);
-  } @else if ($vertical) {
+    } @else if ($vertical) {
     top: 50%;
     transform: translate(0, -50%);
-  }
+    }
+}
+
+@mixin uppercase() {
+    text-transform: uppercase;
 }
