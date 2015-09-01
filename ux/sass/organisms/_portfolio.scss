@@ -7,7 +7,7 @@
     color: #4a7997;
     height: 560px;
 
-/******************************** WBCL ********************************/
+/******************************** SLIDES ********************************/
     .iS-Item {
         h2 {
 	        position: absolute;
@@ -223,54 +223,61 @@
 }
 @media( min-width: $xs-breakpoint){
 .portfolio{
-
+  /******************************** SLIDES ********************************/
+    .iS-Item {
+        h2 {
+        }
+        h2 span {
+        }
+        p {
+        }
+        img.product {
+        }
+        img.logo {
+            max-width: 40%;
+            left: 30%;
+            &.healbe{
+            }
+            &.microarts{
+            }
+            &.finsix{
+            }
+            &.badlab{
+              max-width: 35%;
+            }
+        }
+        img.btn {
+            left: 100px;
+        }
+    }
 }
 }
 @media( min-width: $sm-breakpoint){
 .portfolio{
     height: 560px;
-    .iS-SkinThumbnails .iS-Dots {
-		display: block;
-	}
-    .iS.iS-SkinThumbnails  {
-		width: 100%;
-		height: 520px;
-	}
-     .iS-SkinThumbnails .iS-Previous {
-	    position: absolute;
-    	z-index: 3;
-	    cursor: pointer;
-    	text-align: center;
-	    height: 110px;
-    	width: 10%;
-    	left: 0%;
-	    bottom: 0;
-    	line-height: 108px;
-	    font-size: 4em;
-    }
-    .iS-SkinThumbnails .iS-Next {
-	    position: absolute;
-    	z-index: 3;
-	    cursor: pointer;
-    	text-align: center;
-	    height: 110px;
-    	width: 10%;
-	    right: 0%;
-    	bottom: 0;
-	    line-height: 108px;
-    	font-size: 4em;
-    }
+
 }
 }
 @media( min-width: $md-breakpoint){
 .portfolio{
-    height: 700px;
+    height: 540px;
+    .iS-SkinThumbnails .iS-Dots {
+		display: block;
+	}
+    .iS-SkinThumbnails .iS-Previous {
+    	width: 10%;
+    }
+    .iS-SkinThumbnails .iS-Next {
+    	width: 10%;
+    }
     .iS.iS-SkinThumbnails  {
 		width: 100%;
-		height: 600px;
+		height: 500px;
 	}
+
+/******************************** SLIDES ********************************/
     .iS-Item {
-        h2 {
+         h2 {
 			@include rem('font-size',80px);
 			@include rem('line-height',60px);
         }
@@ -278,51 +285,293 @@
 			@include rem('font-size',40px);
         }
         p {
-          	top: 180px;
+    	    top: 180px;
+	        left: 60px;
+            max-width: 50%;
+			@include rem('font-size',16px);
+			@include rem('line-height',20px);
         }
         img.product {
-            top: 200px;
+            display: block;
+            max-width: 40%;
+            right: 0;
+            top: 140px;
             &.healbe {
+                top: 120px;
             }
             &.microarts {
+                max-width: 40%;
+                right: 0;
+                top: 20px;
             }
             &.finsix {
+                top: 120px;
             }
             &.badlab {
+                max-width: 30%;
+                right: 0%;
+                top: 150px;
             }
         }
         img.logo {
+            max-width: 20%;
+            right: 8%;
+            left: auto;
+            top:60px;
             &.healbe{
             }
+            &.microarts{
+            display: none;
+            }
             &.finsix{
+            right: 10%;
+            top: 60px;
             }
             &.badlab{
+              max-width: 20%;
+              right: 5%;
             }
         }
         img.btn {
-          top: 300px;
+            max-width: 30%;
+            left: 60px;
+            top:320px;
         }
     }
 }
 }
 @media( min-width: $lg-breakpoint){
 .portfolio{
+    height: 580px;
+    .iS-SkinThumbnails .iS-Dots {
+	}
+    .iS-SkinThumbnails .iS-Previous {
+    }
+    .iS-SkinThumbnails .iS-Next {
+    }
+    .iS.iS-SkinThumbnails  {
+		height: 540px;
+	}
 
+/******************************** SLIDES ********************************/
+    .iS-Item {
+         h2 {
+        }
+        h2 span {
+        }
+        p {
+        }
+        img.product {
+            top: 180px;
+            &.healbe {
+                top: 140px;
+            }
+            &.microarts {
+                max-width: 30%;
+                right: 0;
+                top: 40px;
+            }
+            &.finsix {
+                top: 120px;
+            }
+            &.badlab {
+                max-width: 30%;
+                right: 0%;
+                top: 150px;
+            }
+        }
+        img.logo {
+            &.healbe{
+              top: 60px;
+            }
+            &.microarts{
+            display: none;
+            }
+            &.finsix{
+            }
+            &.badlab{
+              max-width: 15%;
+              right: 8%;
+            }
+        }
+        img.btn {
+            max-width: 30%;
+            left: 60px;
+            top:320px;
+        }
+    }
 }
 }
 @media( min-width: $xl-breakpoint){
 .portfolio{
-
-    .iS.iS-SkinThumbnails  {
-
+    height: 580px;
+    .iS-SkinThumbnails .iS-Dots {
 	}
+    .iS-SkinThumbnails .iS-Previous {
+    }
+    .iS-SkinThumbnails .iS-Next {
+    }
+    .iS.iS-SkinThumbnails  {
+		height: 540px;
+	}
+
+/******************************** SLIDES ********************************/
+    .iS-Item {
+         h2 {
+			@include rem('font-size',100px);
+			@include rem('line-height',80px);
+        }
+        h2 span {
+			@include rem('font-size',60px);
+        }
+        p {
+            top: 210px;
+        }
+        img.product {
+            top: 180px;
+            &.healbe {
+                top: 140px;
+            }
+            &.microarts {
+                max-width: 30%;
+                right: 0;
+                top: 20px;
+            }
+            &.finsix {
+                max-width: 36%;
+                top: 100px;
+                right: 5%
+            }
+            &.badlab {
+                max-width: 30%;
+                right: 5%;
+                top: 130px;
+            }
+        }
+        img.logo {
+              top: 40px;
+            &.healbe{
+            }
+            &.microarts{
+            display: none;
+            }
+            &.finsix{
+              top: 20px;
+              right: 13%;
+            }
+            &.badlab{
+              max-width: 15%;
+              right: 15%;
+              top: 20px;
+            }
+        }
+        img.btn {
+            max-width: 20%;
+            left: 60px;
+            top:310px;
+        }
+    }
 }
 }
 @media( min-width: $xxl-breakpoint){
 .portfolio{
-
-    .iS.iS-SkinThumbnails  {
-
+    height: 880px;
+    .iS-SkinThumbnails .iS-Dots {
 	}
+    .iS-SkinThumbnails .iS-Previous {
+    }
+    .iS-SkinThumbnails .iS-Next {
+    }
+    .iS.iS-SkinThumbnails  {
+		height: 840px;
+	}
+
+/******************************** SLIDES ********************************/
+    .iS-Item {
+         h2 {
+			@include rem('font-size',120px);
+			@include rem('line-height',100px);
+        }
+        h2 span {
+			@include rem('font-size',80px);
+        }
+        p {
+            top: 260px;
+            max-width: 40%;
+        }
+        img.product {
+            max-width: 50%;
+            top: 220px;
+            &.healbe {
+            max-width: 45%;
+            top: 160px;
+            }
+            &.microarts {
+                max-width: 30%;
+                right: 5%;
+                top: 20px;
+            }
+            &.finsix {
+                top: 130px;
+            }
+            &.badlab {
+                top: 150px;
+            }
+        }
+        img.logo {
+              top: 40px;
+              right: 12%;
+            &.healbe{
+            }
+            &.microarts{
+            display: none;
+            }
+            &.finsix{
+              top: 40px;
+              right: 13%;
+            }
+            &.badlab{
+              max-width: 15%;
+              right: 15%;
+              top: 20px;
+            }
+        }
+        img.btn {
+            max-width: 20%;
+            left: 60px;
+            top:360px;
+        }
+    }
+      .iS-SkinThumbnails .iS-Dot {
+    	position: absolute;
+    	z-index: 3;
+	    cursor: pointer;
+        width: 240px;
+        height: 120px;
+        background: url(../imgs/home/thumbs/wbcl.png) no-repeat 0 0;
+        text-indent: -5000px;
+        overflow: hidden;
+        top: 0;
+        left: 60px;
+    }
+    .iS-SkinThumbnails .iS-Dot.healbe {
+        background: url(../imgs/home/thumbs/healbe.png) no-repeat 0 0;
+        left: 90px;
+    }
+    .iS-SkinThumbnails .iS-Dot.microarts {
+        background: url(../imgs/home/thumbs/microarts.png) no-repeat 0 0;
+        left:180px;
+    }
+    .iS-SkinThumbnails .iS-Dot.finsix {
+        background: url(../imgs/home/thumbs/finsix.png) no-repeat 0 0;
+        left: 270px;
+    }
+    .iS-SkinThumbnails .iS-Dot.badlab {
+        background: url(../imgs/home/thumbs/badlab.png) no-repeat 0 0;
+        left: 270px;
+    }
+    .iS-SkinThumbnails .iS-Dotactive, .iS-SkinThumbnails .iS-Dot.healbe.iS-Dotactive, .iS-SkinThumbnails .iS-Dot.microarts.iS-Dotactive, .iS-SkinThumbnails .iS-Dot.finsix.iS-Dotactive, .iS-SkinThumbnails .iS-Dot.badlab.iS-Dotactive{
+        background-position: 0 -90px;
+    }
 }
 }

@@ -212,7 +212,7 @@ nav.sub-nav li a {
     left: -30%;
   }
   50% {
-    left: -31%;
+    left: -32%;
   }
   100% {
     left: -30%;
@@ -224,7 +224,7 @@ nav.sub-nav li a {
     left: -35%;
   }
   50% {
-    left: -36%;
+    left: -45%;
   }
   100% {
     left: -35%;
@@ -236,7 +236,7 @@ nav.sub-nav li a {
     right: -30%;
   }
   50% {
-    right: -39%;
+    right: -36%;
   }
   100% {
     right: -30%;
@@ -248,7 +248,7 @@ nav.sub-nav li a {
     right: -35%;
   }
   50% {
-    right: -39%;
+    right: -40%;
   }
   100% {
     right: -35%;
@@ -281,6 +281,36 @@ nav.sub-nav li a {
   background: url(../imgs/banner-bg.jpg) no-repeat 0 0;
   position: center center;
   background-size: cover;
+}
+
+@media (min-width: 1px) {
+  .opening-animation {
+    font-size: .225rem;
+  }
+}
+
+@media (min-width: 480px) {
+  .opening-animation {
+    font-size: .35rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .opening-animation {
+    font-size: .5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .opening-animation {
+    font-size: .75rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .opening-animation {
+    font-size: 1rem;
+  }
 }
 
 .floater {
@@ -565,7 +595,7 @@ section.load, .billboard .content {
   background: #fff;
   color: #4a7997;
   height: 560px;
-  /******************************** WBCL ********************************/
+  /******************************** SLIDES ********************************/
   /******************************** THUMBNAILS ********************************/
   /*Responsive
 @media (min-width: 0px) and (max-width: 499px) {
@@ -811,50 +841,45 @@ section.load, .billboard .content {
   opacity: 1;
 }
 
+@media (min-width: 480px) {
+  .portfolio {
+    /******************************** SLIDES ********************************/
+  }
+  .portfolio .iS-Item img.logo {
+    max-width: 40%;
+    left: 30%;
+  }
+  .portfolio .iS-Item img.logo.badlab {
+    max-width: 35%;
+  }
+  .portfolio .iS-Item img.btn {
+    left: 100px;
+  }
+}
+
 @media (min-width: 640px) {
   .portfolio {
     height: 560px;
-  }
-  .portfolio .iS-SkinThumbnails .iS-Dots {
-    display: block;
-  }
-  .portfolio .iS.iS-SkinThumbnails {
-    width: 100%;
-    height: 520px;
-  }
-  .portfolio .iS-SkinThumbnails .iS-Previous {
-    position: absolute;
-    z-index: 3;
-    cursor: pointer;
-    text-align: center;
-    height: 110px;
-    width: 10%;
-    left: 0%;
-    bottom: 0;
-    line-height: 108px;
-    font-size: 4em;
-  }
-  .portfolio .iS-SkinThumbnails .iS-Next {
-    position: absolute;
-    z-index: 3;
-    cursor: pointer;
-    text-align: center;
-    height: 110px;
-    width: 10%;
-    right: 0%;
-    bottom: 0;
-    line-height: 108px;
-    font-size: 4em;
   }
 }
 
 @media (min-width: 800px) {
   .portfolio {
-    height: 700px;
+    height: 540px;
+    /******************************** SLIDES ********************************/
+  }
+  .portfolio .iS-SkinThumbnails .iS-Dots {
+    display: block;
+  }
+  .portfolio .iS-SkinThumbnails .iS-Previous {
+    width: 10%;
+  }
+  .portfolio .iS-SkinThumbnails .iS-Next {
+    width: 10%;
   }
   .portfolio .iS.iS-SkinThumbnails {
     width: 100%;
-    height: 600px;
+    height: 500px;
   }
   .portfolio .iS-Item h2 {
     font-size: 80px;
@@ -868,11 +893,258 @@ section.load, .billboard .content {
   }
   .portfolio .iS-Item p {
     top: 180px;
+    left: 60px;
+    max-width: 50%;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 20px;
+    line-height: 1.25rem;
   }
   .portfolio .iS-Item img.product {
-    top: 200px;
+    display: block;
+    max-width: 40%;
+    right: 0;
+    top: 140px;
+  }
+  .portfolio .iS-Item img.product.healbe {
+    top: 120px;
+  }
+  .portfolio .iS-Item img.product.microarts {
+    max-width: 40%;
+    right: 0;
+    top: 20px;
+  }
+  .portfolio .iS-Item img.product.finsix {
+    top: 120px;
+  }
+  .portfolio .iS-Item img.product.badlab {
+    max-width: 30%;
+    right: 0%;
+    top: 150px;
+  }
+  .portfolio .iS-Item img.logo {
+    max-width: 20%;
+    right: 8%;
+    left: auto;
+    top: 60px;
+  }
+  .portfolio .iS-Item img.logo.microarts {
+    display: none;
+  }
+  .portfolio .iS-Item img.logo.finsix {
+    right: 10%;
+    top: 60px;
+  }
+  .portfolio .iS-Item img.logo.badlab {
+    max-width: 20%;
+    right: 5%;
   }
   .portfolio .iS-Item img.btn {
-    top: 300px;
+    max-width: 30%;
+    left: 60px;
+    top: 320px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .portfolio {
+    height: 580px;
+    /******************************** SLIDES ********************************/
+  }
+  .portfolio .iS.iS-SkinThumbnails {
+    height: 540px;
+  }
+  .portfolio .iS-Item img.product {
+    top: 180px;
+  }
+  .portfolio .iS-Item img.product.healbe {
+    top: 140px;
+  }
+  .portfolio .iS-Item img.product.microarts {
+    max-width: 30%;
+    right: 0;
+    top: 40px;
+  }
+  .portfolio .iS-Item img.product.finsix {
+    top: 120px;
+  }
+  .portfolio .iS-Item img.product.badlab {
+    max-width: 30%;
+    right: 0%;
+    top: 150px;
+  }
+  .portfolio .iS-Item img.logo.healbe {
+    top: 60px;
+  }
+  .portfolio .iS-Item img.logo.microarts {
+    display: none;
+  }
+  .portfolio .iS-Item img.logo.badlab {
+    max-width: 15%;
+    right: 8%;
+  }
+  .portfolio .iS-Item img.btn {
+    max-width: 30%;
+    left: 60px;
+    top: 320px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .portfolio {
+    height: 580px;
+    /******************************** SLIDES ********************************/
+  }
+  .portfolio .iS.iS-SkinThumbnails {
+    height: 540px;
+  }
+  .portfolio .iS-Item h2 {
+    font-size: 100px;
+    font-size: 6.25rem;
+    line-height: 80px;
+    line-height: 5rem;
+  }
+  .portfolio .iS-Item h2 span {
+    font-size: 60px;
+    font-size: 3.75rem;
+  }
+  .portfolio .iS-Item p {
+    top: 210px;
+  }
+  .portfolio .iS-Item img.product {
+    top: 180px;
+  }
+  .portfolio .iS-Item img.product.healbe {
+    top: 140px;
+  }
+  .portfolio .iS-Item img.product.microarts {
+    max-width: 30%;
+    right: 0;
+    top: 20px;
+  }
+  .portfolio .iS-Item img.product.finsix {
+    max-width: 36%;
+    top: 100px;
+    right: 5%;
+  }
+  .portfolio .iS-Item img.product.badlab {
+    max-width: 30%;
+    right: 5%;
+    top: 130px;
+  }
+  .portfolio .iS-Item img.logo {
+    top: 40px;
+  }
+  .portfolio .iS-Item img.logo.microarts {
+    display: none;
+  }
+  .portfolio .iS-Item img.logo.finsix {
+    top: 20px;
+    right: 13%;
+  }
+  .portfolio .iS-Item img.logo.badlab {
+    max-width: 15%;
+    right: 15%;
+    top: 20px;
+  }
+  .portfolio .iS-Item img.btn {
+    max-width: 20%;
+    left: 60px;
+    top: 310px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .portfolio {
+    height: 880px;
+    /******************************** SLIDES ********************************/
+  }
+  .portfolio .iS.iS-SkinThumbnails {
+    height: 840px;
+  }
+  .portfolio .iS-Item h2 {
+    font-size: 120px;
+    font-size: 7.5rem;
+    line-height: 100px;
+    line-height: 6.25rem;
+  }
+  .portfolio .iS-Item h2 span {
+    font-size: 80px;
+    font-size: 5rem;
+  }
+  .portfolio .iS-Item p {
+    top: 260px;
+    max-width: 40%;
+  }
+  .portfolio .iS-Item img.product {
+    max-width: 50%;
+    top: 220px;
+  }
+  .portfolio .iS-Item img.product.healbe {
+    max-width: 45%;
+    top: 160px;
+  }
+  .portfolio .iS-Item img.product.microarts {
+    max-width: 30%;
+    right: 5%;
+    top: 20px;
+  }
+  .portfolio .iS-Item img.product.finsix {
+    top: 130px;
+  }
+  .portfolio .iS-Item img.product.badlab {
+    top: 150px;
+  }
+  .portfolio .iS-Item img.logo {
+    top: 40px;
+    right: 12%;
+  }
+  .portfolio .iS-Item img.logo.microarts {
+    display: none;
+  }
+  .portfolio .iS-Item img.logo.finsix {
+    top: 40px;
+    right: 13%;
+  }
+  .portfolio .iS-Item img.logo.badlab {
+    max-width: 15%;
+    right: 15%;
+    top: 20px;
+  }
+  .portfolio .iS-Item img.btn {
+    max-width: 20%;
+    left: 60px;
+    top: 360px;
+  }
+  .portfolio .iS-SkinThumbnails .iS-Dot {
+    position: absolute;
+    z-index: 3;
+    cursor: pointer;
+    width: 240px;
+    height: 120px;
+    background: url(../imgs/home/thumbs/wbcl.png) no-repeat 0 0;
+    text-indent: -5000px;
+    overflow: hidden;
+    top: 0;
+    left: 60px;
+  }
+  .portfolio .iS-SkinThumbnails .iS-Dot.healbe {
+    background: url(../imgs/home/thumbs/healbe.png) no-repeat 0 0;
+    left: 90px;
+  }
+  .portfolio .iS-SkinThumbnails .iS-Dot.microarts {
+    background: url(../imgs/home/thumbs/microarts.png) no-repeat 0 0;
+    left: 180px;
+  }
+  .portfolio .iS-SkinThumbnails .iS-Dot.finsix {
+    background: url(../imgs/home/thumbs/finsix.png) no-repeat 0 0;
+    left: 270px;
+  }
+  .portfolio .iS-SkinThumbnails .iS-Dot.badlab {
+    background: url(../imgs/home/thumbs/badlab.png) no-repeat 0 0;
+    left: 270px;
+  }
+  .portfolio .iS-SkinThumbnails .iS-Dotactive, .portfolio .iS-SkinThumbnails .iS-Dot.healbe.iS-Dotactive, .portfolio .iS-SkinThumbnails .iS-Dot.microarts.iS-Dotactive, .portfolio .iS-SkinThumbnails .iS-Dot.finsix.iS-Dotactive, .portfolio .iS-SkinThumbnails .iS-Dot.badlab.iS-Dotactive {
+    background-position: 0 -90px;
   }
 }

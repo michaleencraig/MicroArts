@@ -94,7 +94,7 @@
             <!--Start Content-->
             <div class="iS-Content">
                   <!---WBCL  -->
-                  <div class="iS-Items" data-loopTime="1000">
+                  <div class="iS-Items">
                       <!-- -->
                       <div class="iS-Item"
                           data-effectIn="slidebottom fadein" data-effectInTime="1000" data-effectInDelay="100"
@@ -109,21 +109,21 @@
                            data-effectOut="slideleft fadein" data-effectOutTime="500" data-effectOutDelay="0"
                          data-effectInBack="slidetop fadein" data-effectInTimeBack="1000" data-effectInDelayBack="900"
                            data-effectOutBack="slideright fadein" data-effectOutTimeBack="500" data-effectOutDelayBack="0">
-                          <img class="logo" src="content/home/wbcl-logo.png" />
+                          <img class="logo wbcl" src="content/home/wbcl-logo.png" />
                       </div>
                       <!-- -->
                       <div class="iS-Item"
-                         data-effectIn="flipright zoomin fadein" data-effectInTime="1000" data-effectInDelay="100"
+                         data-effectIn="slidetop fadein" data-effectInTime="1000" data-effectInDelay="100"
                            data-effectOut="slideleft fadein" data-effectOutTime="500" data-effectOutDelay="0"
-                         data-effectInBack="flipright zoomin fadein" data-effectInTimeBack="1000" data-effectInDelayBack="500"
+                         data-effectInBack="slidetop fadein" data-effectInTimeBack="1000" data-effectInDelayBack="500"
                            data-effectOutBack="slideright fadein" data-effectOutTimeBack="500" data-effectOutDelayBack="0">
                            <h2><span>Get Their</span><br>Attention</h2>
                       </div>
                       <!-- -->
                       <div class="iS-Item"
-                         data-effectIn="flipright zoomin fadein" data-effectInTime="1000" data-effectInDelay="100"
+                         data-effectIn="slidebottom fadein" data-effectInTime="1000" data-effectInDelay="100"
                            data-effectOut="slideleft fadein" data-effectOutTime="500" data-effectOutDelay="0"
-                         data-effectInBack="flipright zoomin fadein" data-effectInTimeBack="1000" data-effectInDelayBack="700"
+                         data-effectInBack="slidebottom fadein" data-effectInTimeBack="1000" data-effectInDelayBack="700"
                            data-effectOutBack="slideright fadein" data-effectOutTimeBack="500" data-effectOutDelayBack="0">
                            <p>If you're an underdog in an overdeveloped category, your competition's white noise can be your greatest opportunity. Through a dual focus on differentiated performance and emotion, MicroArts helped World's Best Cat Litter&#153; create a sustainable competitive advantage&#151;and grow its market share 1,000,000% over five years.</p>
                       </div>
@@ -134,7 +134,7 @@
                          data-effectInBack="slidebottom fadein" data-effectInTimeBack="1000" data-effectInDelayBack="900"
                            data-effectOutBack="slideright fadein" data-effectOutTimeBack="500" data-effectOutDelayBack="0">
 
-                           <a href="#"><img src="content/home/learn-how.png" alt="" class="btn"></a>
+                           <img src="content/home/learn-how.png" alt="" class="btn">
 
                       </div>
                       <!-- -->
@@ -158,29 +158,30 @@
                           <img class="logo healbe" src="content/home/gobe-logo.png" />
                       </div>
                       <!-- -->
-                      <div class="iS-Item"
-                         data-effectIn="flipright zoomin fadein" data-effectInTime="1000" data-effectInDelay="1000"
+                     <div class="iS-Item"
+                          data-effectIn="slidetop fadein" data-effectInTime="1000" data-effectInDelay="1400"
                            data-effectOut="slideleft fadein" data-effectOutTime="500" data-effectOutDelay="0"
-                         data-effectInBack="flipright zoomin fadein" data-effectInTimeBack="1000" data-effectInDelayBack="500"
+                         data-effectInBack="slidetop fadein" data-effectInTimeBack="1000" data-effectInDelayBack="900"
                            data-effectOutBack="slideright fadein" data-effectOutTimeBack="500" data-effectOutDelayBack="0">
                            <h2><span>Make Them</span><br>Believe</h2>
                       </div>
                       <!-- -->
-                      <div class="iS-Item"
-                         data-effectIn="flipright zoomin fadein" data-effectInTime="1000" data-effectInDelay="1200"
+                       <div class="iS-Item"
+                          data-effectIn="slidebottom fadein" data-effectInTime="1000" data-effectInDelay="1400"
                            data-effectOut="slideleft fadein" data-effectOutTime="500" data-effectOutDelay="0"
-                         data-effectInBack="flipright zoomin fadein" data-effectInTimeBack="1000" data-effectInDelayBack="700"
+                         data-effectInBack="slidebottom fadein" data-effectInTimeBack="1000" data-effectInDelayBack="900"
                            data-effectOutBack="slideright fadein" data-effectOutTimeBack="500" data-effectOutDelayBack="0">
                            <p>Your competition will steal your game-changing technology, but they can't steal your audience's hearts. MicroArts helped Healbe&#153; connect its revolutionary performance differentiator to its audience's deep emotional desires, creating a groundswell of dedicated brand evangelists. </p>
                       </div>
                       <!-- -->
-                      <div class="iS-Item"
+                     <div class="iS-Item"
                          data-effectIn="slidebottom fadein" data-effectInTime="1000" data-effectInDelay="1400"
                            data-effectOut="slideleft fadein" data-effectOutTime="500" data-effectOutDelay="0"
                          data-effectInBack="slidebottom fadein" data-effectInTimeBack="1000" data-effectInDelayBack="900"
                            data-effectOutBack="slideright fadein" data-effectOutTimeBack="500" data-effectOutDelayBack="0">
 
-                           <a href="#"><img src="content/home/learn-how.png" alt="" class="btn"></a>
+
+                            <img src="content/home/learn-how.png" alt="" class="btn">
 
                       </div>
                       <!-- -->
@@ -205,34 +206,35 @@
                       </div>
                       <!-- -->
                       <div class="iS-Item"
-                         data-effectIn="flipright zoomin fadein" data-effectInTime="1000" data-effectInDelay="1000"
+                          data-effectIn="slidetop fadein" data-effectInTime="1000" data-effectInDelay="1400"
                            data-effectOut="slideleft fadein" data-effectOutTime="500" data-effectOutDelay="0"
-                         data-effectInBack="flipright zoomin fadein" data-effectInTimeBack="1000" data-effectInDelayBack="500"
+                         data-effectInBack="slidetop fadein" data-effectInTimeBack="1000" data-effectInDelayBack="900"
                            data-effectOutBack="slideright fadein" data-effectOutTimeBack="500" data-effectOutDelayBack="0">
                            <h2><span>Get</span><br>Started</h2>
                       </div>
                       <!-- -->
                       <div class="iS-Item"
-                         data-effectIn="flipright zoomin fadein" data-effectInTime="1000" data-effectInDelay="1200"
+                          data-effectIn="slidebottom fadein" data-effectInTime="1000" data-effectInDelay="1400"
                            data-effectOut="slideleft fadein" data-effectOutTime="500" data-effectOutDelay="0"
-                         data-effectInBack="flipright zoomin fadein" data-effectInTimeBack="1000" data-effectInDelayBack="700"
+                         data-effectInBack="slidebottom fadein" data-effectInTimeBack="1000" data-effectInDelayBack="900"
                            data-effectOutBack="slideright fadein" data-effectOutTimeBack="500" data-effectOutDelayBack="0">
                            <p>Are old ways of thinking about competition and creative strategy holding back your brand? Download a free Brand Opportunity Worksheet to help discover your true competitive difference, and start creating your brand revolution.</p>
                       </div>
                       <!-- -->
-                      <div class="iS-Item"
+                     <div class="iS-Item"
                          data-effectIn="slidebottom fadein" data-effectInTime="1000" data-effectInDelay="1400"
                            data-effectOut="slideleft fadein" data-effectOutTime="500" data-effectOutDelay="0"
                          data-effectInBack="slidebottom fadein" data-effectInTimeBack="1000" data-effectInDelayBack="900"
                            data-effectOutBack="slideright fadein" data-effectOutTimeBack="500" data-effectOutDelayBack="0">
 
-                           <a href="#"><img src="content/home/download-now.png" alt="" class="btn"></a>
+
+                          <img src="content/home/download-now.png" alt="" class="btn">
 
                       </div>
                       <!-- -->
                   </div>
                   <!---FINSIX  -->
-                  <div class="iS-Items" data-loopTime="1000">
+                  <div class="iS-Items">
                       <!-- -->
                       <div class="iS-Item"
                           data-effectIn="slidebottom fadein" data-effectInTime="1000" data-effectInDelay="1400"
@@ -251,28 +253,29 @@
                       </div>
                       <!-- -->
                       <div class="iS-Item"
-                         data-effectIn="flipright zoomin fadein" data-effectInTime="1000" data-effectInDelay="1000"
+                          data-effectIn="slidetop fadein" data-effectInTime="1000" data-effectInDelay="1400"
                            data-effectOut="slideleft fadein" data-effectOutTime="500" data-effectOutDelay="0"
-                         data-effectInBack="flipright zoomin fadein" data-effectInTimeBack="1000" data-effectInDelayBack="500"
+                         data-effectInBack="slidetop fadein" data-effectInTimeBack="1000" data-effectInDelayBack="900"
                            data-effectOutBack="slideright fadein" data-effectOutTimeBack="500" data-effectOutDelayBack="0">
                            <h2><span>Strip It</span><br>Down</h2>
                       </div>
                       <!-- -->
                       <div class="iS-Item"
-                         data-effectIn="flipright zoomin fadein" data-effectInTime="1000" data-effectInDelay="1200"
+                          data-effectIn="slidebottom fadein" data-effectInTime="1000" data-effectInDelay="1400"
                            data-effectOut="slideleft fadein" data-effectOutTime="500" data-effectOutDelay="0"
-                         data-effectInBack="flipright zoomin fadein" data-effectInTimeBack="1000" data-effectInDelayBack="700"
+                         data-effectInBack="slidebottom fadein" data-effectInTimeBack="1000" data-effectInDelayBack="900"
                            data-effectOutBack="slideright fadein" data-effectOutTimeBack="500" data-effectOutDelayBack="0">
                            <p>When you're selling to a fatigued audience, the most direct message carries the most weight. MicroArts developed visual identity, packaging, and strategic messaging to make purchasing a FINSix DART&#153; the easiest possible decision for its audience.</p>
                       </div>
                       <!-- -->
-                      <div class="iS-Item"
+                     <div class="iS-Item"
                          data-effectIn="slidebottom fadein" data-effectInTime="1000" data-effectInDelay="1400"
                            data-effectOut="slideleft fadein" data-effectOutTime="500" data-effectOutDelay="0"
                          data-effectInBack="slidebottom fadein" data-effectInTimeBack="1000" data-effectInDelayBack="900"
                            data-effectOutBack="slideright fadein" data-effectOutTimeBack="500" data-effectOutDelayBack="0">
 
-                           <a href="#"><img src="content/home/learn-how.png" alt="" class="btn finsix"></a>
+
+                           <img src="content/home/learn-how.png" alt="" class="btn finsix">
 
                       </div>
                       <!-- -->
@@ -296,29 +299,30 @@
                           <img class="logo badlab" src="content/home/badlab-logo.png" />
                       </div>
                       <!-- -->
-                      <div class="iS-Item"
-                         data-effectIn="flipright zoomin fadein" data-effectInTime="1000" data-effectInDelay="1000"
+                     <div class="iS-Item"
+                          data-effectIn="slidetop fadein" data-effectInTime="1000" data-effectInDelay="1400"
                            data-effectOut="slideleft fadein" data-effectOutTime="500" data-effectOutDelay="0"
-                         data-effectInBack="flipright zoomin fadein" data-effectInTimeBack="1000" data-effectInDelayBack="500"
+                         data-effectInBack="slidetop fadein" data-effectInTimeBack="1000" data-effectInDelayBack="900"
                            data-effectOutBack="slideright fadein" data-effectOutTimeBack="500" data-effectOutDelayBack="0">
                            <h2><span>Build Your</span><br>Tribe</h2>
                       </div>
                       <!-- -->
                       <div class="iS-Item"
-                         data-effectIn="flipright zoomin fadein" data-effectInTime="1000" data-effectInDelay="1200"
+                          data-effectIn="slidebottom fadein" data-effectInTime="1000" data-effectInDelay="1400"
                            data-effectOut="slideleft fadein" data-effectOutTime="500" data-effectOutDelay="0"
-                         data-effectInBack="flipright zoomin fadein" data-effectInTimeBack="1000" data-effectInDelayBack="700"
+                         data-effectInBack="slidebottom fadein" data-effectInTimeBack="1000" data-effectInDelayBack="900"
                            data-effectOutBack="slideright fadein" data-effectOutTimeBack="500" data-effectOutDelayBack="0">
                            <p>The best way to ensure brand loyalty is to become part of your audience's story. MicroArts cut through the frenzied sameness of the exploding craft beer market to help Bad Lab Beer Co.&#153; create a brand its consumers can own. </p>
                       </div>
                       <!-- -->
-                      <div class="iS-Item"
+                     <div class="iS-Item"
                          data-effectIn="slidebottom fadein" data-effectInTime="1000" data-effectInDelay="1400"
                            data-effectOut="slideleft fadein" data-effectOutTime="500" data-effectOutDelay="0"
                          data-effectInBack="slidebottom fadein" data-effectInTimeBack="1000" data-effectInDelayBack="900"
                            data-effectOutBack="slideright fadein" data-effectOutTimeBack="500" data-effectOutDelayBack="0">
 
-                           <a href="#"><img src="content/home/learn-how.png" alt="" class="btn badlab"></a>
+
+                         <img src="content/home/learn-how.png" alt="" class="btn badlab">
 
                       </div>
                       <!-- -->
