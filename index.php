@@ -191,6 +191,14 @@
                            data-effectOutBack="slideright fadein" data-effectOutTimeBack="500" data-effectOutDelayBack="0">
                           <img class="product microarts" src="content/home/microarts-book.png" />
                       </div>
+                       <!-- -->
+                      <div class="iS-Item"
+                          data-effectIn="slidetop fadein" data-effectInTime="1000" data-effectInDelay="1400"
+                           data-effectOut="slideleft fadein" data-effectOutTime="500" data-effectOutDelay="0"
+                         data-effectInBack="slidetop fadein" data-effectInTimeBack="1000" data-effectInDelayBack="900"
+                           data-effectOutBack="slideright fadein" data-effectOutTimeBack="500" data-effectOutDelayBack="0">
+                          <img class="logo microarts" src="ux/imgs/microarts.gif" />
+                      </div>
                       <!-- -->
                       <div class="iS-Item"
                          data-effectIn="flipright zoomin fadein" data-effectInTime="1000" data-effectInDelay="1000"

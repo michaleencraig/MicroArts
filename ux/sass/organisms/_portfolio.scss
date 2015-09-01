@@ -2,9 +2,11 @@
 	position: relative;
 	overflow: hidden;
     width: 100%;
-    height: 382px;
+    height: 400px;
 	background:#fff;
     color: #4a7997;
+    height: 560px;
+
 /******************************** WBCL ********************************/
     .iS-Item {
         h2 {
@@ -12,27 +14,29 @@
     	    z-index: 1;
     	    top: 20px;
         	left: 60px;
-            max-width: 40%;
+            max-width: 80%;
             text-transform: uppercase;
-			@include rem('font-size',60px);
-			@include rem('line-height',40px);
+			@include rem('font-size',40px);
+			@include rem('line-height',30px);
             font-weight: normal;
         }
         h2 span {
             font-weight: 100;
-			@include rem('font-size',40px);
+			@include rem('font-size',30px);
         }
         p {
     	    position: absolute;
     	    z-index: 1;
-        	top: 120px;
+        	top: 210px;
 	        left: 60px;
-            max-width: 40%;
-			@include rem('line-height',20px);
+            max-width: 80%;
+			@include rem('font-size',12px);
+			@include rem('line-height',16px);
             color: #a2a2a2;
         }
         img.product {
-            max-width: 50%;
+            display: none;
+            max-width: 45%;
             position: absolute;
             z-index: 1;
             right: 0;
@@ -41,53 +45,56 @@
                 top: 120px;
             }
             &.microarts {
-                max-width: 36%;
-                right: 100px;
+                max-width: 32%;
+                right: 10%;
                 top: 20px;
             }
             &.finsix {
                 top: 80px;
             }
             &.badlab {
-                max-width: 35%;
-                right: 100px;
+                max-width: 30%;
+                right: 10%;
                 top: 145px;
             }
         }
         img.logo {
-            max-width: 20%;
+            max-width: 60%;
             position: absolute;
             z-index: 1;
-            right: 15%;
-            top: 20px;
+            left: 20%;
+            top:100px;
             &.healbe{
-                top: 40px;
+                top: 125px;
+            }
+            &.microarts{
+                top: 120px;
             }
             &.finsix{
-                max-width: 18%;
-                right: 200px;
-                top: 25px;
+                top: 120px;
             }
             &.badlab{
-                max-width: 18%;
-                right: 200px;
-                top: 25px;
+              max-width: 50%;
+
             }
         }
         img.btn {
-            max-width: 30%;
+            max-width: 60%;
             position: absolute;
             z-index: 1;
             left: 60px;
-            top: 340px;
+            top:340px;
         }
     }
 /******************************** THUMBNAILS ********************************/
+
     .iS.iS-SkinThumbnails {
 	    position: relative;
     	top: 0px;
 	    left: 0px;
-    	margin-bottom: 100px;
+    	margin-bottom:40px;
+        width: 100%;
+		height: 520px;
     }
     .iS-SkinThumbnails .iS-Commands {
 	    position: absolute;
@@ -125,7 +132,7 @@
 	    cursor: pointer;
     	text-align: center;
 	    height: 110px;
-    	width: 10%;
+    	width: 50%;
     	left: 0%;
 	    bottom: 0;
     	line-height: 108px;
@@ -137,12 +144,15 @@
 	    cursor: pointer;
     	text-align: center;
 	    height: 110px;
-    	width: 10%;
+    	width: 50%;
 	    right: 0%;
     	bottom: 0;
 	    line-height: 108px;
     	font-size: 4em;
     }
+    .iS-SkinThumbnails .iS-Dots {
+		display: none;
+	}
     .iS-SkinThumbnails .iS-Loopline {
 	    position: absolute;
     	z-index: 4;
@@ -196,8 +206,7 @@
     .iS-SkinThumbnails .iS-Dotactive:after {
 	    opacity: 1;
     }
-@media( min-width: 1024px ){ }
-/*Responsive   */
+/*Responsive
 @media (min-width: 0px) and (max-width: 499px) {
 	.iS.iS-SkinThumbnails  {
 		width: 100%;
@@ -209,116 +218,111 @@
 	.iS-SkinThumbnails .iS-Dots {
 		display: none;
 	}
-}
+}    */
 
 }
+@media( min-width: $xs-breakpoint){
+.portfolio{
 
+}
+}
 @media( min-width: $sm-breakpoint){
 .portfolio{
-    height: 668px;
+    height: 560px;
+    .iS-SkinThumbnails .iS-Dots {
+		display: block;
+	}
     .iS.iS-SkinThumbnails  {
 		width: 100%;
-		height: 568px;
+		height: 520px;
 	}
+     .iS-SkinThumbnails .iS-Previous {
+	    position: absolute;
+    	z-index: 3;
+	    cursor: pointer;
+    	text-align: center;
+	    height: 110px;
+    	width: 10%;
+    	left: 0%;
+	    bottom: 0;
+    	line-height: 108px;
+	    font-size: 4em;
+    }
+    .iS-SkinThumbnails .iS-Next {
+	    position: absolute;
+    	z-index: 3;
+	    cursor: pointer;
+    	text-align: center;
+	    height: 110px;
+    	width: 10%;
+	    right: 0%;
+    	bottom: 0;
+	    line-height: 108px;
+    	font-size: 4em;
+    }
 }
 }
 @media( min-width: $md-breakpoint){
 .portfolio{
-    height: 768px;
+    height: 700px;
     .iS.iS-SkinThumbnails  {
 		width: 100%;
-		height: 668px;
+		height: 600px;
 	}
     .iS-Item {
         h2 {
-			@include rem('font-size',100px);
-			@include rem('line-height',80px);
+			@include rem('font-size',80px);
+			@include rem('line-height',60px);
         }
         h2 span {
-			@include rem('font-size',60px);
+			@include rem('font-size',40px);
         }
         p {
-    	    position: absolute;
-    	    z-index: 1;
-        	top: 210px;
-	        left: 60px;
-            max-width: 40%;
-			@include rem('line-height',20px);
+          	top: 180px;
         }
         img.product {
-            max-width: 50%;
-            position: absolute;
-            z-index: 1;
-            right: 0;
             top: 200px;
             &.healbe {
-                top: 120px;
             }
             &.microarts {
-                max-width: 36%;
-                right: 100px;
-                top: 20px;
             }
             &.finsix {
-                top: 80px;
             }
             &.badlab {
-                max-width: 35%;
-                right: 100px;
-                top: 145px;
             }
         }
         img.logo {
-            max-width: 20%;
-            position: absolute;
-            z-index: 1;
-            right: 160px;
-            top: 80px;
             &.healbe{
-                top: 40px;
             }
             &.finsix{
-                max-width: 18%;
-                right: 200px;
-                top: 25px;
             }
             &.badlab{
-                max-width: 18%;
-                right: 200px;
-                top: 25px;
             }
         }
         img.btn {
-            max-width: 30%;
-            position: absolute;
-            z-index: 1;
-            left: 60px;
-            top: 340px;
+          top: 300px;
         }
     }
 }
 }
 @media( min-width: $lg-breakpoint){
 .portfolio{
-    height: 700px;
+
 }
 }
 @media( min-width: $xl-breakpoint){
 .portfolio{
-    height: 800px;
+
     .iS.iS-SkinThumbnails  {
-		width: 100%;
-		height: 700px;
+
 	}
 }
 }
 @media( min-width: $xxl-breakpoint){
 .portfolio{
-    height: 1590px;
 
     .iS.iS-SkinThumbnails  {
-		width: 100%;
-		height: 700px;
+
 	}
 }
 }
