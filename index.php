@@ -19,11 +19,6 @@
         <link rel="stylesheet" href="<?php echo $styles_dir;?>loading-bars.css" type="text/css" media="all" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                $('img').svgmagic();
-            });
-        </script>
 	</head>
 	<body class="home">
 
