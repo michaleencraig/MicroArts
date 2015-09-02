@@ -2,18 +2,17 @@
 	position: relative;
 	overflow: hidden;
     width: 100%;
-    height: 400px;
+    min-height: calc(100vh - 101px);
 	background:#fff;
     color: #4a7997;
-    height: 560px;
 
 /******************************** SLIDES ********************************/
     .iS-Item {
         h2 {
 	        position: absolute;
     	    z-index: 1;
-    	    top: 20px;
-        	left: 60px;
+    	    top: 10%;
+        	left: 10%;
             max-width: 80%;
             text-transform: uppercase;
 			@include rem('font-size',40px);
@@ -27,43 +26,23 @@
         p {
     	    position: absolute;
     	    z-index: 1;
-        	top: 210px;
-	        left: 60px;
+        	top: 45%;
+	        left: 10%;
             max-width: 80%;
-			@include rem('font-size',12px);
+			@include rem('font-size',14px);
 			@include rem('line-height',16px);
             color: #a2a2a2;
+            text-align: center
         }
         img.product {
             display: none;
-            max-width: 45%;
-            position: absolute;
-            z-index: 1;
-            right: 0;
-            top: 120px;
-            &.healbe {
-                top: 120px;
-            }
-            &.microarts {
-                max-width: 32%;
-                right: 10%;
-                top: 20px;
-            }
-            &.finsix {
-                top: 80px;
-            }
-            &.badlab {
-                max-width: 30%;
-                right: 10%;
-                top: 145px;
-            }
         }
         img.logo {
             max-width: 60%;
             position: absolute;
             z-index: 1;
             left: 20%;
-            top:100px;
+            top:25%;
             &.healbe{
                 top: 125px;
             }
@@ -82,8 +61,8 @@
             max-width: 60%;
             position: absolute;
             z-index: 1;
-            left: 60px;
-            top:340px;
+            left: 20%;
+            top:70%;
         }
     }
 /******************************** THUMBNAILS ********************************/
@@ -94,7 +73,7 @@
 	    left: 0px;
     	margin-bottom:40px;
         width: 100%;
-		height: 520px;
+        min-height: calc(100vh - 101px);
     }
     .iS-SkinThumbnails .iS-Commands {
 	    position: absolute;
@@ -254,13 +233,11 @@
 }
 @media( min-width: $sm-breakpoint){
 .portfolio{
-    height: 560px;
 
 }
 }
 @media( min-width: $md-breakpoint){
 .portfolio{
-    height: 540px;
     .iS-SkinThumbnails .iS-Dots {
 		display: block;
 	}
@@ -291,26 +268,28 @@
 			@include rem('font-size',16px);
 			@include rem('line-height',20px);
         }
-        img.product {
+         img.product {
             display: block;
-            max-width: 40%;
+            max-width: 45%;
+            position: absolute;
+            z-index: 1;
             right: 0;
-            top: 140px;
+            top: 120px;
             &.healbe {
                 top: 120px;
             }
             &.microarts {
-                max-width: 40%;
-                right: 0;
+                max-width: 32%;
+                right: 10%;
                 top: 20px;
             }
             &.finsix {
-                top: 120px;
+                top: 80px;
             }
             &.badlab {
                 max-width: 30%;
-                right: 0%;
-                top: 150px;
+                right: 10%;
+                top: 145px;
             }
         }
         img.logo {
@@ -342,7 +321,6 @@
 }
 @media( min-width: $lg-breakpoint){
 .portfolio{
-    height: 580px;
     .iS-SkinThumbnails .iS-Dots {
 	}
     .iS-SkinThumbnails .iS-Previous {
@@ -350,12 +328,13 @@
     .iS-SkinThumbnails .iS-Next {
     }
     .iS.iS-SkinThumbnails  {
-		height: 540px;
+
 	}
 
 /******************************** SLIDES ********************************/
     .iS-Item {
          h2 {
+           color: red;
         }
         h2 span {
         }
@@ -404,7 +383,6 @@
 }
 @media( min-width: $xl-breakpoint){
 .portfolio{
-    height: 580px;
     .iS-SkinThumbnails .iS-Dots {
 	}
     .iS-SkinThumbnails .iS-Previous {
@@ -475,7 +453,6 @@
 }
 @media( min-width: $xxl-breakpoint){
 .portfolio{
-    height: 880px;
     .iS-SkinThumbnails .iS-Dots {
 	}
     .iS-SkinThumbnails .iS-Previous {

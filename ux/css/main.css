@@ -212,7 +212,7 @@ nav.sub-nav li a {
     left: -30%;
   }
   50% {
-    left: -32%;
+    left: -39%;
   }
   100% {
     left: -30%;
@@ -224,7 +224,7 @@ nav.sub-nav li a {
     left: -35%;
   }
   50% {
-    left: -45%;
+    left: -42%;
   }
   100% {
     left: -35%;
@@ -236,7 +236,7 @@ nav.sub-nav li a {
     right: -30%;
   }
   50% {
-    right: -36%;
+    right: -39%;
   }
   100% {
     right: -30%;
@@ -248,7 +248,7 @@ nav.sub-nav li a {
     right: -35%;
   }
   50% {
-    right: -40%;
+    right: -45%;
   }
   100% {
     right: -35%;
@@ -271,6 +271,213 @@ nav.sub-nav li a {
   overflow: hidden;
   background: url(../imgs/microarts.gif) no-repeat 0 0;
   display: block;
+}
+
+@media (min-width: 1px) {
+  .opening-animation {
+    font-size: .225rem;
+  }
+}
+
+@media (min-width: 480px) {
+  .opening-animation {
+    font-size: .35rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .opening-animation {
+    font-size: .5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .opening-animation {
+    font-size: .75rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .opening-animation {
+    font-size: 1rem;
+  }
+}
+
+.floater {
+  width: 700px;
+  height: 700px;
+  background-color: rgba(255, 255, 255, 0.07);
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.floater.one-left {
+  left: -35%;
+}
+
+.floater.two-left {
+  left: -33%;
+  top: 40%;
+}
+
+.floater.one-right {
+  right: -36%;
+  top: -20%;
+}
+
+.floater.two-right {
+  right: -34%;
+  bottom: 0%;
+}
+
+section.first-slide, section.second-slide {
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+}
+
+section.second-slide {
+  opacity: 0;
+}
+
+.billboard, .billboard .content {
+  position: relative;
+  height: 100%;
+}
+
+section.first-slide {
+  top: 65%;
+}
+
+section.load {
+  position: absolute;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 15%;
+}
+
+.arrow {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.arrow img {
+  height: auto;
+  position: relative;
+}
+
+.arrow-spinner {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.arrow-spinner img {
+  height: auto;
+  clear: both;
+  position: relative;
+}
+
+.arrow-spinner span.scroll {
+  display: block;
+  opacity: 0;
+  text-transform: uppercase;
+  position: absolute;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+@media (min-width: 1px) {
+  .arrow-spinner {
+    height: 150px;
+  }
+  .arrow-spinner img {
+    width: 150px;
+  }
+  .arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .arrow img {
+    width: 75px;
+  }
+  .arrow-spinner.resize {
+    height: 150px;
+  }
+  .arrow-spinner.resize img {
+    width: 75px;
+  }
+  .arrow.resize img {
+    width: 37.5px;
+  }
+}
+
+@media (min-width: 640px) {
+  .billboard {
+    min-height: 407px;
+    height: 407px;
+  }
+  section.second-slide {
+    bottom: 35%;
+  }
+  section.first-slide.shrink {
+    bottom: 60%;
+  }
+}
+
+@media (min-width: 800px) {
+  .billboard {
+    min-height: 509px;
+    height: 509px;
+  }
+  .arrow-spinner {
+    height: 150px;
+  }
+  .arrow-spinner img {
+    width: 300px;
+  }
+  .arrow {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .arrow img {
+    width: 150px;
+  }
+  .arrow-spinner.resize {
+    height: 150px;
+  }
+  .arrow-spinner.resize img {
+    width: 150px;
+  }
+  .arrow.resize img {
+    width: 75px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .billboard {
+    min-height: 651px;
+    height: 651px;
+  }
+  section.second-slide {
+    bottom: 25%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .billboard {
+    min-height: 814px;
+    height: 814px;
+  }
 }
 
 .billboard {
@@ -591,10 +798,9 @@ section.load, .billboard .content {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 400px;
+  min-height: calc(100vh - 101px);
   background: #fff;
   color: #4a7997;
-  height: 560px;
   /******************************** SLIDES ********************************/
   /******************************** THUMBNAILS ********************************/
   /*Responsive
@@ -615,8 +821,8 @@ section.load, .billboard .content {
 .portfolio .iS-Item h2 {
   position: absolute;
   z-index: 1;
-  top: 20px;
-  left: 60px;
+  top: 10%;
+  left: 10%;
   max-width: 80%;
   text-transform: uppercase;
   font-size: 40px;
@@ -635,43 +841,19 @@ section.load, .billboard .content {
 .portfolio .iS-Item p {
   position: absolute;
   z-index: 1;
-  top: 210px;
-  left: 60px;
+  top: 45%;
+  left: 10%;
   max-width: 80%;
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 16px;
   line-height: 1rem;
   color: #a2a2a2;
+  text-align: center;
 }
 
 .portfolio .iS-Item img.product {
   display: none;
-  max-width: 45%;
-  position: absolute;
-  z-index: 1;
-  right: 0;
-  top: 120px;
-}
-
-.portfolio .iS-Item img.product.healbe {
-  top: 120px;
-}
-
-.portfolio .iS-Item img.product.microarts {
-  max-width: 32%;
-  right: 10%;
-  top: 20px;
-}
-
-.portfolio .iS-Item img.product.finsix {
-  top: 80px;
-}
-
-.portfolio .iS-Item img.product.badlab {
-  max-width: 30%;
-  right: 10%;
-  top: 145px;
 }
 
 .portfolio .iS-Item img.logo {
@@ -679,7 +861,7 @@ section.load, .billboard .content {
   position: absolute;
   z-index: 1;
   left: 20%;
-  top: 100px;
+  top: 25%;
 }
 
 .portfolio .iS-Item img.logo.healbe {
@@ -702,8 +884,8 @@ section.load, .billboard .content {
   max-width: 60%;
   position: absolute;
   z-index: 1;
-  left: 60px;
-  top: 340px;
+  left: 20%;
+  top: 70%;
 }
 
 .portfolio .iS.iS-SkinThumbnails {
@@ -712,7 +894,7 @@ section.load, .billboard .content {
   left: 0px;
   margin-bottom: 40px;
   width: 100%;
-  height: 520px;
+  min-height: calc(100vh - 101px);
 }
 
 .portfolio .iS-SkinThumbnails .iS-Commands {
@@ -857,15 +1039,8 @@ section.load, .billboard .content {
   }
 }
 
-@media (min-width: 640px) {
-  .portfolio {
-    height: 560px;
-  }
-}
-
 @media (min-width: 800px) {
   .portfolio {
-    height: 540px;
     /******************************** SLIDES ********************************/
   }
   .portfolio .iS-SkinThumbnails .iS-Dots {
@@ -902,25 +1077,27 @@ section.load, .billboard .content {
   }
   .portfolio .iS-Item img.product {
     display: block;
-    max-width: 40%;
+    max-width: 45%;
+    position: absolute;
+    z-index: 1;
     right: 0;
-    top: 140px;
+    top: 120px;
   }
   .portfolio .iS-Item img.product.healbe {
     top: 120px;
   }
   .portfolio .iS-Item img.product.microarts {
-    max-width: 40%;
-    right: 0;
+    max-width: 32%;
+    right: 10%;
     top: 20px;
   }
   .portfolio .iS-Item img.product.finsix {
-    top: 120px;
+    top: 80px;
   }
   .portfolio .iS-Item img.product.badlab {
     max-width: 30%;
-    right: 0%;
-    top: 150px;
+    right: 10%;
+    top: 145px;
   }
   .portfolio .iS-Item img.logo {
     max-width: 20%;
@@ -948,11 +1125,10 @@ section.load, .billboard .content {
 
 @media (min-width: 1024px) {
   .portfolio {
-    height: 580px;
     /******************************** SLIDES ********************************/
   }
-  .portfolio .iS.iS-SkinThumbnails {
-    height: 540px;
+  .portfolio .iS-Item h2 {
+    color: red;
   }
   .portfolio .iS-Item img.product {
     top: 180px;
@@ -992,7 +1168,6 @@ section.load, .billboard .content {
 
 @media (min-width: 1280px) {
   .portfolio {
-    height: 580px;
     /******************************** SLIDES ********************************/
   }
   .portfolio .iS.iS-SkinThumbnails {
@@ -1056,7 +1231,6 @@ section.load, .billboard .content {
 
 @media (min-width: 1920px) {
   .portfolio {
-    height: 880px;
     /******************************** SLIDES ********************************/
   }
   .portfolio .iS.iS-SkinThumbnails {
