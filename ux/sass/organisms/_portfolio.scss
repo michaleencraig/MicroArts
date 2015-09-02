@@ -11,7 +11,7 @@
         h2 {
 	        position: absolute;
     	    z-index: 1;
-    	    top: 10%;
+    	    top: 6%;
         	left: 10%;
             max-width: 80%;
             text-transform: uppercase;
@@ -26,13 +26,12 @@
         p {
     	    position: absolute;
     	    z-index: 1;
-        	top: 45%;
+        	top: 40%;
 	        left: 10%;
             max-width: 80%;
 			@include rem('font-size',14px);
 			@include rem('line-height',16px);
             color: #a2a2a2;
-            text-align: center
         }
         img.product {
             display: none;
@@ -42,19 +41,15 @@
             position: absolute;
             z-index: 1;
             left: 20%;
-            top:25%;
+            top:20%;
             &.healbe{
-                top: 125px;
             }
             &.microarts{
-                top: 120px;
             }
             &.finsix{
-                top: 120px;
             }
             &.badlab{
               max-width: 50%;
-
             }
         }
         img.btn {
@@ -66,12 +61,10 @@
         }
     }
 /******************************** THUMBNAILS ********************************/
-
     .iS.iS-SkinThumbnails {
 	    position: relative;
     	top: 0px;
 	    left: 0px;
-    	margin-bottom:40px;
         width: 100%;
         min-height: calc(100vh - 101px);
     }
@@ -140,51 +133,6 @@
 	    left: 0px;
     	bottom: 110px;
     }
-    .iS-SkinThumbnails .iS-Dots {
-    	position: absolute;
-	    z-index: 3;
-    	text-align: center;
-	    left: 10%;
-    	bottom: 0;
-	    width: 80%;
-    	height: 90px;
-    	text-align: center;
-    	overflow: hidden;
-    }
-    .iS-SkinThumbnails .iS-Dot {
-    	position: absolute;
-    	z-index: 3;
-	    cursor: pointer;
-        width: 180px;
-        height: 90px;
-        background: url(../imgs/home/thumbs/wbcl.png) no-repeat 0 0;
-        text-indent: -5000px;
-        overflow: hidden;
-        top: 0;
-        left: 0;
-    }
-    .iS-SkinThumbnails .iS-Dot.healbe {
-        background: url(../imgs/home/thumbs/healbe.png) no-repeat 0 0;
-        left: 30px;
-    }
-    .iS-SkinThumbnails .iS-Dot.microarts {
-        background: url(../imgs/home/thumbs/microarts.png) no-repeat 0 0;
-        left: 60px;
-    }
-    .iS-SkinThumbnails .iS-Dot.finsix {
-        background: url(../imgs/home/thumbs/finsix.png) no-repeat 0 0;
-        left: 110px;
-    }
-    .iS-SkinThumbnails .iS-Dot.badlab {
-        background: url(../imgs/home/thumbs/badlab.png) no-repeat 0 0;
-        left: 120px;
-    }
-    .iS-SkinThumbnails .iS-Dotactive, .iS-SkinThumbnails .iS-Dot.healbe.iS-Dotactive, .iS-SkinThumbnails .iS-Dot.microarts.iS-Dotactive, .iS-SkinThumbnails .iS-Dot.finsix.iS-Dotactive, .iS-SkinThumbnails .iS-Dot.badlab.iS-Dotactive{
-        background-position: 0 -90px;
-    }
-    .iS-SkinThumbnails .iS-Dotactive:after {
-	    opacity: 1;
-    }
 /*Responsive
 @media (min-width: 0px) and (max-width: 499px) {
 	.iS.iS-SkinThumbnails  {
@@ -209,32 +157,35 @@
         h2 span {
         }
         p {
+          top: 50%
         }
         img.product {
         }
         img.logo {
-            max-width: 40%;
-            left: 30%;
+          max-width: 40%;
+          left: 30%;
             &.healbe{
+              top: 30%;
             }
             &.microarts{
+              top: 30%;
             }
             &.finsix{
+              top: 30%;
             }
             &.badlab{
-              max-width: 35%;
+              max-width:30%;
             }
         }
         img.btn {
-            left: 100px;
+          max-width: 40%;
+          left: 30%
         }
     }
 }
 }
 @media( min-width: $sm-breakpoint){
-.portfolio{
-
-}
+.portfolio{  }
 }
 @media( min-width: $md-breakpoint){
 .portfolio{
@@ -243,78 +194,120 @@
 	}
     .iS-SkinThumbnails .iS-Previous {
     	width: 10%;
+    	bottom: 2%;
     }
     .iS-SkinThumbnails .iS-Next {
     	width: 10%;
+    	bottom: 2%;
     }
     .iS.iS-SkinThumbnails  {
-		width: 100%;
-		height: 500px;
 	}
+
+    .iS-SkinThumbnails .iS-Dots {
+    	position: absolute;
+	    z-index: 3;
+    	text-align: center;
+	    left: 10%;
+    	bottom: 2%;
+	    width: 80%;
+    	height: 90px;
+    	text-align: center;
+    	overflow: hidden;
+    }
+    .iS-SkinThumbnails .iS-Dot {
+    	position: absolute;
+    	z-index: 3;
+	    cursor: pointer;
+        width: 180px;
+        height: 90px;
+        background: url(../imgs/home/thumbs/wbcl.png) no-repeat 0 0;
+        text-indent: -5000px;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+    }
+    .iS-SkinThumbnails .iS-Dot.healbe {
+        background: url(../imgs/home/thumbs/healbe.png) no-repeat 0 0;
+        left: 10%;
+    }
+    .iS-SkinThumbnails .iS-Dot.microarts {
+        background: url(../imgs/home/thumbs/microarts.png) no-repeat 0 0;
+        left:15%;
+    }
+    .iS-SkinThumbnails .iS-Dot.finsix {
+        background: url(../imgs/home/thumbs/finsix.png) no-repeat 0 0;
+        left: 25%;
+    }
+    .iS-SkinThumbnails .iS-Dot.badlab {
+        background: url(../imgs/home/thumbs/badlab.png) no-repeat 0 0;
+        left:30%;
+    }
+    .iS-SkinThumbnails .iS-Dotactive, .iS-SkinThumbnails .iS-Dot.healbe.iS-Dotactive, .iS-SkinThumbnails .iS-Dot.microarts.iS-Dotactive, .iS-SkinThumbnails .iS-Dot.finsix.iS-Dotactive, .iS-SkinThumbnails .iS-Dot.badlab.iS-Dotactive{
+        background-position: 0 -90px;
+    }
+    .iS-SkinThumbnails .iS-Dotactive:after {
+	    opacity: 1;
+    }
 
 /******************************** SLIDES ********************************/
     .iS-Item {
          h2 {
-			@include rem('font-size',80px);
-			@include rem('line-height',60px);
+           left: 5%;
+		   @include rem('font-size',80px);
+		   @include rem('line-height',60px);
         }
         h2 span {
-			@include rem('font-size',40px);
+          @include rem('font-size',40px);
         }
         p {
-    	    top: 180px;
-	        left: 60px;
-            max-width: 50%;
-			@include rem('font-size',16px);
-			@include rem('line-height',20px);
+          top: 35%;
+          max-width: 50%;
+          left: 5%;
+		  @include rem('font-size',16px);
+          @include rem('line-height',20px);
         }
-         img.product {
-            display: block;
-            max-width: 45%;
-            position: absolute;
-            z-index: 1;
-            right: 0;
-            top: 120px;
+        img.product {
+          display: block;
+          max-width: 40%;
+          position: absolute;
+          z-index: 1;
+          right: 0;
+          top: 35%;
             &.healbe {
-                top: 120px;
             }
             &.microarts {
-                max-width: 32%;
-                right: 10%;
-                top: 20px;
+              top: 15%
             }
             &.finsix {
-                top: 80px;
             }
             &.badlab {
-                max-width: 30%;
-                right: 10%;
-                top: 145px;
+              max-width: 30%;
+              right: 5%;
             }
         }
         img.logo {
-            max-width: 20%;
-            right: 8%;
+            max-width: 25%;
+            right: 5%;
             left: auto;
-            top:60px;
+            top:15%;
             &.healbe{
+              top:15%;
             }
             &.microarts{
             display: none;
             }
             &.finsix{
-            right: 10%;
-            top: 60px;
+              top:15%;
             }
             &.badlab{
               max-width: 20%;
-              right: 5%;
+              right: 10%;
             }
         }
         img.btn {
-            max-width: 30%;
-            left: 60px;
-            top:320px;
+            max-width:30%;
+            left: 5%;
+            top:60%;
         }
     }
 }
@@ -333,50 +326,35 @@
 
 /******************************** SLIDES ********************************/
     .iS-Item {
-         h2 {
-           color: red;
+        h2 {
         }
         h2 span {
         }
         p {
         }
         img.product {
-            top: 180px;
             &.healbe {
-                top: 140px;
             }
             &.microarts {
-                max-width: 30%;
-                right: 0;
-                top: 40px;
+              max-width: 35%;
             }
             &.finsix {
-                top: 120px;
+              top: 30%;
             }
             &.badlab {
-                max-width: 30%;
-                right: 0%;
-                top: 150px;
             }
         }
         img.logo {
             &.healbe{
-              top: 60px;
             }
             &.microarts{
-            display: none;
             }
             &.finsix{
             }
             &.badlab{
-              max-width: 15%;
-              right: 8%;
             }
         }
         img.btn {
-            max-width: 30%;
-            left: 60px;
-            top:320px;
         }
     }
 }
@@ -390,7 +368,6 @@
     .iS-SkinThumbnails .iS-Next {
     }
     .iS.iS-SkinThumbnails  {
-		height: 540px;
 	}
 
 /******************************** SLIDES ********************************/
@@ -403,152 +380,71 @@
 			@include rem('font-size',60px);
         }
         p {
-            top: 210px;
+
         }
         img.product {
-            top: 180px;
+          top: 40%;
             &.healbe {
-                top: 140px;
+            top: 35%;
+            right:5%;
             }
             &.microarts {
-                max-width: 30%;
-                right: 0;
-                top: 20px;
+              max-width: 30%;
+              right:5%;
             }
             &.finsix {
-                max-width: 36%;
-                top: 100px;
-                right: 5%
+              max-width: 35%;
+              right:5%;
             }
             &.badlab {
-                max-width: 30%;
-                right: 5%;
-                top: 130px;
+              top: 30%;
             }
         }
         img.logo {
-              top: 40px;
             &.healbe{
+            right:12%;
             }
             &.microarts{
-            display: none;
             }
             &.finsix{
-              top: 20px;
-              right: 13%;
+            right:10%;
             }
             &.badlab{
-              max-width: 15%;
-              right: 15%;
-              top: 20px;
+            right:15%;
+            max-width: 15%;
             }
         }
         img.btn {
-            max-width: 20%;
-            left: 60px;
-            top:310px;
+          top: 55%;
         }
     }
 }
 }
 @media( min-width: $xxl-breakpoint){
-.portfolio{
-    .iS-SkinThumbnails .iS-Dots {
-	}
-    .iS-SkinThumbnails .iS-Previous {
-    }
-    .iS-SkinThumbnails .iS-Next {
-    }
-    .iS.iS-SkinThumbnails  {
-		height: 840px;
-	}
-
-/******************************** SLIDES ********************************/
+.portfolio{  /******************************** SLIDES ********************************/
     .iS-Item {
          h2 {
-			@include rem('font-size',120px);
-			@include rem('line-height',100px);
-        }
-        h2 span {
-			@include rem('font-size',80px);
         }
         p {
-            top: 260px;
-            max-width: 40%;
-        }
-        img.product {
-            max-width: 50%;
-            top: 220px;
-            &.healbe {
-            max-width: 45%;
-            top: 160px;
-            }
-            &.microarts {
-                max-width: 30%;
-                right: 5%;
-                top: 20px;
-            }
-            &.finsix {
-                top: 130px;
-            }
-            &.badlab {
-                top: 150px;
-            }
-        }
-        img.logo {
-              top: 40px;
-              right: 12%;
-            &.healbe{
-            }
-            &.microarts{
-            display: none;
-            }
-            &.finsix{
-              top: 40px;
-              right: 13%;
-            }
-            &.badlab{
-              max-width: 15%;
-              right: 15%;
-              top: 20px;
-            }
-        }
-        img.btn {
-            max-width: 20%;
-            left: 60px;
-            top:360px;
+          @include rem('font-size',20px);
+          @include rem('line-height',24px);
         }
     }
-      .iS-SkinThumbnails .iS-Dot {
-    	position: absolute;
-    	z-index: 3;
-	    cursor: pointer;
-        width: 240px;
-        height: 120px;
-        background: url(../imgs/home/thumbs/wbcl.png) no-repeat 0 0;
-        text-indent: -5000px;
-        overflow: hidden;
-        top: 0;
-        left: 60px;
+    .iS-SkinThumbnails .iS-Dot {
+        left: 5%;
     }
     .iS-SkinThumbnails .iS-Dot.healbe {
-        background: url(../imgs/home/thumbs/healbe.png) no-repeat 0 0;
-        left: 90px;
+        left: 15%;
     }
     .iS-SkinThumbnails .iS-Dot.microarts {
-        background: url(../imgs/home/thumbs/microarts.png) no-repeat 0 0;
-        left:180px;
+        left:25%;
     }
     .iS-SkinThumbnails .iS-Dot.finsix {
-        background: url(../imgs/home/thumbs/finsix.png) no-repeat 0 0;
-        left: 270px;
+        left: 35%;
     }
     .iS-SkinThumbnails .iS-Dot.badlab {
-        background: url(../imgs/home/thumbs/badlab.png) no-repeat 0 0;
-        left: 270px;
+        left:40%;
     }
-    .iS-SkinThumbnails .iS-Dotactive, .iS-SkinThumbnails .iS-Dot.healbe.iS-Dotactive, .iS-SkinThumbnails .iS-Dot.microarts.iS-Dotactive, .iS-SkinThumbnails .iS-Dot.finsix.iS-Dotactive, .iS-SkinThumbnails .iS-Dot.badlab.iS-Dotactive{
-        background-position: 0 -90px;
-    }
+
 }
 }
