@@ -224,7 +224,7 @@ nav.sub-nav li a {
     left: -35%;
   }
   50% {
-    left: -38%;
+    left: -40%;
   }
   100% {
     left: -35%;
@@ -236,7 +236,7 @@ nav.sub-nav li a {
     right: -30%;
   }
   50% {
-    right: -40%;
+    right: -39%;
   }
   100% {
     right: -30%;
@@ -248,7 +248,7 @@ nav.sub-nav li a {
     right: -35%;
   }
   50% {
-    right: -39%;
+    right: -36%;
   }
   100% {
     right: -35%;
@@ -1127,10 +1127,14 @@ section.load, .billboard .content {
     font-size: 6.25rem;
     line-height: 80px;
     line-height: 5rem;
+    top: 2%;
   }
   .portfolio .iS-Item h2 span {
     font-size: 60px;
     font-size: 3.75rem;
+  }
+  .portfolio .iS-Item p {
+    top: 37%;
   }
   .portfolio .iS-Item img.product {
     top: 40%;
@@ -1150,6 +1154,9 @@ section.load, .billboard .content {
   .portfolio .iS-Item img.product.badlab {
     top: 30%;
   }
+  .portfolio .iS-Item img.logo {
+    top: 10%;
+  }
   .portfolio .iS-Item img.logo.healbe {
     right: 12%;
   }
@@ -1162,6 +1169,18 @@ section.load, .billboard .content {
   }
   .portfolio .iS-Item img.btn {
     top: 55%;
+  }
+  .portfolio .iS-SkinThumbnails .iS-Dot.healbe {
+    left: 3%;
+  }
+  .portfolio .iS-SkinThumbnails .iS-Dot.microarts {
+    left: 6%;
+  }
+  .portfolio .iS-SkinThumbnails .iS-Dot.finsix {
+    left: 12%;
+  }
+  .portfolio .iS-SkinThumbnails .iS-Dot.badlab {
+    left: 15%;
   }
 }
 
