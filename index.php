@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="<?php echo $styles_dir;?>font-awesome.min.css" type="text/css" media="all" />
         <link rel="stylesheet" href="<?php echo $styles_dir;?>loading-bars.css" type="text/css" media="all" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script type="text/javascript" src="<?php echo $scripts_dir;?>svgmagic.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
         <script>
             $(document).ready(function(){
                 $('img').svgmagic();
@@ -48,11 +48,11 @@
                     <h3 class="small">Strategy, Design, and Communications<br />to reinvent your place in the market.</h3>
                 </section>
                 <section class="load">
-                    <div class="arrow">
-                        <img src="ux/imgs/home/arrow.svg" alt="MicroArts Logo" />
-                    </div>
                     <div class="arrow-spinner">
-                        <img src="ux/imgs/home/spinner.svg" alt="Arrows Spinning" />
+                        <div class="arrow">
+                            <img src="ux/imgs/home/arrow.png" alt="MicroArts Logo" />
+                        </div>
+                        <img src="ux/imgs/home/spinner.png" alt="Arrows Spinning" />
                         <span class="scroll">Scroll</span>
                     </div>
                 </section>
