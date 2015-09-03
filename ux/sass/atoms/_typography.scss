@@ -29,6 +29,10 @@ h2.small {
     font-size: 3.5em;
     font-weight: 100;
 }
+h2.medium {
+    font-size: 5.5em;
+    font-weight: 300;
+}
 h2.large {
     font-size: 7.5em;
     font-weight: 300;
@@ -44,6 +48,9 @@ sup{
 	top: -.25em;
 	position: relative;
 	font-size: .85em;
+}
+.light, .small.light, .large.light {
+    font-weight: 100;
 }
 
 /*@media( min-width: $xxs-breakpoint){

@@ -63,24 +63,33 @@ h2.small {
   font-weight: 100; }
 
 /* line 32, /Applications/MAMP/htdocs/ux/sass/atoms/_typography.scss */
+h2.medium {
+  font-size: 5.5em;
+  font-weight: 300; }
+
+/* line 36, /Applications/MAMP/htdocs/ux/sass/atoms/_typography.scss */
 h2.large {
   font-size: 7.5em;
   font-weight: 300; }
 
-/* line 36, /Applications/MAMP/htdocs/ux/sass/atoms/_typography.scss */
+/* line 40, /Applications/MAMP/htdocs/ux/sass/atoms/_typography.scss */
 h3.small {
   font-weight: 300;
   font-size: 1.75em; }
 
-/* line 40, /Applications/MAMP/htdocs/ux/sass/atoms/_typography.scss */
+/* line 44, /Applications/MAMP/htdocs/ux/sass/atoms/_typography.scss */
 em, i {
   font-style: italic; }
 
-/* line 43, /Applications/MAMP/htdocs/ux/sass/atoms/_typography.scss */
+/* line 47, /Applications/MAMP/htdocs/ux/sass/atoms/_typography.scss */
 sup {
   top: -.25em;
   position: relative;
   font-size: .85em; }
+
+/* line 52, /Applications/MAMP/htdocs/ux/sass/atoms/_typography.scss */
+.light, .small.light, .large.light {
+  font-weight: 100; }
 
 /*@media( min-width: $xxs-breakpoint){
     body {
@@ -139,12 +148,17 @@ html {
 .main {
   padding-top: 101px; }
 
+/* line 18, /Applications/MAMP/htdocs/ux/sass/atoms/_layout.scss */
+.one-third {
+  width: calc(100% / 3);
+  float: left; }
+
 @media (min-width: 1024px) {
-  /* line 19, /Applications/MAMP/htdocs/ux/sass/atoms/_layout.scss */
+  /* line 24, /Applications/MAMP/htdocs/ux/sass/atoms/_layout.scss */
   .column {
     width: 50%;
     float: left; }
-    /* line 23, /Applications/MAMP/htdocs/ux/sass/atoms/_layout.scss */
+    /* line 28, /Applications/MAMP/htdocs/ux/sass/atoms/_layout.scss */
     .column + .column {
       box-sizing: border-box;
       padding-left: 40px; } }
@@ -195,7 +209,7 @@ nav.sub-nav li a {
 
   /* line 15, /Applications/MAMP/htdocs/ux/sass/atoms/_animations.scss */
   50% {
-    left: -35%; }
+    left: -39%; }
 
   /* line 16, /Applications/MAMP/htdocs/ux/sass/atoms/_animations.scss */
   100% {
@@ -208,7 +222,7 @@ nav.sub-nav li a {
 
   /* line 21, /Applications/MAMP/htdocs/ux/sass/atoms/_animations.scss */
   50% {
-    left: -40%; }
+    left: -44%; }
 
   /* line 22, /Applications/MAMP/htdocs/ux/sass/atoms/_animations.scss */
   100% {
@@ -221,7 +235,7 @@ nav.sub-nav li a {
 
   /* line 27, /Applications/MAMP/htdocs/ux/sass/atoms/_animations.scss */
   50% {
-    right: -36%; }
+    right: -39%; }
 
   /* line 28, /Applications/MAMP/htdocs/ux/sass/atoms/_animations.scss */
   100% {
@@ -234,7 +248,7 @@ nav.sub-nav li a {
 
   /* line 33, /Applications/MAMP/htdocs/ux/sass/atoms/_animations.scss */
   50% {
-    right: -39%; }
+    right: -40%; }
 
   /* line 34, /Applications/MAMP/htdocs/ux/sass/atoms/_animations.scss */
   100% {
@@ -447,6 +461,60 @@ section.load {
   .billboard {
     min-height: 814px;
     height: 814px; } }
+
+/* line 1, /Applications/MAMP/htdocs/ux/sass/organisms/_middle-animation.scss */
+.billboard.middle-animation {
+  min-height: calc(100vh - 101px);
+  padding: 0 5%;
+  width: 90%;
+  text-align: center; }
+
+/* line 7, /Applications/MAMP/htdocs/ux/sass/organisms/_middle-animation.scss */
+.billboard.middle-animation .content {
+  margin-top: 10vh; }
+
+/* line 11, /Applications/MAMP/htdocs/ux/sass/organisms/_middle-animation.scss */
+.billboard.middle-animation .one-third.first > img, .billboard.middle-animation .one-third.second > img, .billboard.middle-animation .one-third.third > img {
+  opacity: 0; }
+
+/* line 15, /Applications/MAMP/htdocs/ux/sass/organisms/_middle-animation.scss */
+.billboard.middle-animation .one-third {
+  font-size: 1.5rem;
+  position: relative;
+  min-height: 380px; }
+  /* line 19, /Applications/MAMP/htdocs/ux/sass/organisms/_middle-animation.scss */
+  .billboard.middle-animation .one-third div.title {
+    position: relative;
+    top: 80px;
+    width: 75%;
+    margin: 0 auto;
+    opacity: 0; }
+    /* line 25, /Applications/MAMP/htdocs/ux/sass/organisms/_middle-animation.scss */
+    .billboard.middle-animation .one-third div.title h3 {
+      font-size: 3.15rem; }
+    /* line 28, /Applications/MAMP/htdocs/ux/sass/organisms/_middle-animation.scss */
+    .billboard.middle-animation .one-third div.title h4 {
+      font-size: 1.4rem; }
+  /* line 32, /Applications/MAMP/htdocs/ux/sass/organisms/_middle-animation.scss */
+  .billboard.middle-animation .one-third img {
+    position: absolute;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0); }
+  /* line 36, /Applications/MAMP/htdocs/ux/sass/organisms/_middle-animation.scss */
+  .billboard.middle-animation .one-third p {
+    font-size: 1rem;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    width: 75%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0); }
+
+/* line 45, /Applications/MAMP/htdocs/ux/sass/organisms/_middle-animation.scss */
+section.title-block {
+  margin-bottom: 2.5vh; }
 
 /* line 1, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
 .billboard {

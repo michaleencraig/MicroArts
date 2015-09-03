@@ -40,13 +40,36 @@ setTimeout(function(){
 
 });
 
-// Detect if an item is in the viewport
-function onVisibilityChange (el, callback) {
-    return function () {
-        /*your code here*/ console.log('visibility ' + isElementInViewport(el));
-    }
-}
+var spinner = new TimelineMax()
+.add(TweenMax.to(".one-third.first > img", 7.5, {rotation: -360, opacity: 1, transformOrigin:"center center", ease: Expo.easeOut, delay: .25}))
+.add(TweenMax.to(".one-third.second > img", 7.5, {rotation: -360, opacity: 1, transformOrigin:"center center", ease: Expo.easeOut, delay: .35}))
+.add(TweenMax.to(".one-third.third > img", 7.5, {rotation: -360, opacity: 1, transformOrigin:"center center", ease: Expo.easeOut, delay: .45}));
 
-var handler = onVisibilityChange(el, callback);
+var spinner_text = new TimelineMax()
+.add(TweenMax.to(".middle-animation .one-third.first .title", 3.75, {opacity: 1, ease: Expo.easeOut, delay: .25}))
+.add(TweenMax.to(".middle-animation .one-third.first p", 3.75, {opacity: 1, ease: Expo.easeOut, delay: .25}))
+.add(TweenMax.to(".middle-animation .one-third.second .title", 3.75, {opacity: 1, ease: Expo.easeOut, delay: .25}))
+.add(TweenMax.to(".middle-animation .one-third.second p", 3.75, {opacity: 1, ease: Expo.easeOut, delay: .25}))
+.add(TweenMax.to(".middle-animation .one-third.third .title", 3.75, {opacity: 1, ease: Expo.easeOut, delay: .25}))
+.add(TweenMax.to(".middle-animation .one-third.third p", 3.75, {opacity: 1, ease: Expo.easeOut, delay: .25}))
 
-$(window).on('DOMContentLoaded load resize scroll', handler);
+var controller = new ScrollMagic.Controller();
+		
+var spin_animation = new ScrollMagic.Scene ({
+        triggerElement: ".middle-animation",
+        reverse: true,
+        offset: 50,
+        duration: 300
+    })
+    .setTween(spinner)
+    .addTo(controller);
+
+var spin_text = new ScrollMagic.Scene ({
+        triggerElement: ".middle-animation",
+        reverse: true,
+        offset: 75,
+        duration: 300
+    })
+    .setTween(spinner_text)
+    .addTo(controller);
+

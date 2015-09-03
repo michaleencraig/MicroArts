@@ -17,7 +17,10 @@
         <link rel="stylesheet" href="<?php echo $styles_dir;?>main.css">
         <link rel="stylesheet" href="<?php echo $styles_dir;?>font-awesome.min.css" type="text/css" media="all" />
         <link rel="stylesheet" href="<?php echo $styles_dir;?>loading-bars.css" type="text/css" media="all" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="<?php echo $scripts_dir;?>ScrollMagic.min.js"></script>
+        <script type="text/javascript" src="<?php echo $scripts_dir;?>animation.gsap.min.js"></script>
+        <script type="text/javascript" src="<?php echo $scripts_dir;?>jquery.ScrollMagic.min.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
 	</head>
 	<body class="home">
@@ -328,13 +331,58 @@
           </div><!--End Slider -->
 <!------------------------------------------------------------->
 
+        </div> <!-- Slider Container End -->
+            
+        <div class="billboard middle-animation">
+            <div class="floater one-left"></div>
+            <div class="floater two-left"></div>
+            <div class="floater one-right"></div>
+            <div class="floater two-right"></div>
+            <div class="content">
+                <section class="title-block">
+                    <h2 class="small">Blow Up Your Market<br />In A Big Way.</h2>
+                    <h2 class="medium">One Micro Step At A Time.</h2>
+                </section>
+                <section class="process">
+                    <div class="one-third first">
+                        <img src="ux/imgs/home/spin-middle.png" alt="Arrows Spinning" />
+                        <div class="title">
+                            <h3 class="small light">The</h3>
+                            <h3 class="small">Strategy</h3>
+                            <h4 class="small light">That defines your <br/ >difference.</h4>
+                        </div>
+                        <p class="light">Stand out in a crowded market, with brand strategies that change the conversation for your audience.</p>
+                    </div>
+                    <div class="one-third second">
+                        <img src="ux/imgs/home/spin-middle.png" alt="Arrows Spinning" />
+                        <div class="title">
+                            <h3 class="small light">The</h3>
+                            <h3 class="small">Creative</h3>
+                            <h4 class="small light">That disrupts your <br/ >category.</h4>
+                        </div>
+                        <p class="light">Carve out a space you can own, with positioning, messaging, and design that redefines your place in the market.</p>
+                    </div>
+                    <div class="one-third third">
+                        <img src="ux/imgs/home/spin-middle.png" alt="Arrows Spinning" />
+                        <div class="title">
+                            <h3 class="small light">The</h3>
+                            <h3 class="small">Campaigns</h3>
+                            <h4 class="small light">That defy<br/ >expectations.</h4>
+                        </div>
+                        <p class="light">Stop your audience in their tracks, with simple, memorable, and emotionally powerful brand experiences.</p>
+                    </div>
+                </section>
+                <section class="action">
+                    
+                </section>
+            </div>
         </div>
 
-		</div>
+    </div>
 
-		<footer class="primary-footer">
+    <footer class="primary-footer">
 
-		</footer>
+    </footer>
         <script src="<?php echo $scripts_dir;?>scripts.min.js"></script>
         <script type="text/javascript" src="<?php echo $scripts_dir;?>loader.js"></script>
         <script type="text/javascript" src="<?php echo $scripts_dir;?>infinitySlider.min.js"></script>

@@ -15,6 +15,11 @@ html{
   padding-top:$nav-height;
 }
 
+.one-third {
+    width: calc(100% / 3);
+    float: left;
+}
+
 @media( min-width: $lg-breakpoint){
 	.column{
 		width: 50%;
