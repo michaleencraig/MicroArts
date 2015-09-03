@@ -13,6 +13,7 @@
 //        $('div.arrow, div.arrow-spinner').removeClass('active');
 //    }
 //});
+
 $(document).ready(function(){
 // Icebergs
 TweenMax.to(".floater.one-left", 18, {scale: 1.5, left: "-30%", yoyo: true, repeat: -1, ease: Power0.easeNone});
@@ -38,3 +39,14 @@ setTimeout(function(){
 }, 4000);
 
 });
+
+// Detect if an item is in the viewport
+function onVisibilityChange (el, callback) {
+    return function () {
+        /*your code here*/ console.log('visibility ' + isElementInViewport(el));
+    }
+}
+
+var handler = onVisibilityChange(el, callback);
+
+$(window).on('DOMContentLoaded load resize scroll', handler);

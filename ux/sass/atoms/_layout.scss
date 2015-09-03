@@ -12,7 +12,7 @@ html{
 	@include clearfix;
 }
 .main {
-  padding-top:101px;
+  padding-top:$nav-height;
 }
 
 @media( min-width: $lg-breakpoint){

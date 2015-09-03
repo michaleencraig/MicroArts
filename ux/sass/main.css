@@ -195,7 +195,7 @@ nav.sub-nav li a {
 
   /* line 15, /Applications/MAMP/htdocs/ux/sass/atoms/_animations.scss */
   50% {
-    left: -39%; }
+    left: -35%; }
 
   /* line 16, /Applications/MAMP/htdocs/ux/sass/atoms/_animations.scss */
   100% {
@@ -221,7 +221,7 @@ nav.sub-nav li a {
 
   /* line 27, /Applications/MAMP/htdocs/ux/sass/atoms/_animations.scss */
   50% {
-    right: -35%; }
+    right: -36%; }
 
   /* line 28, /Applications/MAMP/htdocs/ux/sass/atoms/_animations.scss */
   100% {
@@ -234,7 +234,7 @@ nav.sub-nav li a {
 
   /* line 33, /Applications/MAMP/htdocs/ux/sass/atoms/_animations.scss */
   50% {
-    right: -36%; }
+    right: -39%; }
 
   /* line 34, /Applications/MAMP/htdocs/ux/sass/atoms/_animations.scss */
   100% {
@@ -314,16 +314,20 @@ section.first-slide, section.second-slide {
 section.second-slide {
   opacity: 0; }
 
-/* line 58, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
+/* line 59, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
+.billboard.opening-animation {
+  min-height: calc(100vh - 101px); }
+
+/* line 63, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
 .billboard, .billboard .content {
   position: relative;
   height: 100%; }
 
-/* line 63, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
+/* line 68, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
 section.first-slide {
   top: 65%; }
 
-/* line 67, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
+/* line 72, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
 section.load {
   position: absolute;
   position: absolute;
@@ -331,26 +335,26 @@ section.load {
   transform: translate(-50%, 0);
   top: 15%; }
 
-/* line 73, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
+/* line 78, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
 .arrow {
   margin: 0 auto;
   text-align: center; }
-  /* line 76, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
+  /* line 81, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
   .arrow img {
     height: auto;
     position: relative; }
 
-/* line 81, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
+/* line 86, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
 .arrow-spinner {
   margin: 0 auto;
   text-align: center;
   position: relative; }
-  /* line 85, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
+  /* line 90, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
   .arrow-spinner img {
     height: auto;
     clear: both;
     position: relative; }
-  /* line 90, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
+  /* line 95, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
   .arrow-spinner span.scroll {
     display: block;
     opacity: 0;
@@ -360,84 +364,86 @@ section.load {
     left: 50%;
     transform: translate(-50%, 0); }
 
-@media (min-width: 1px) {
-  /* line 100, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
-  .arrow-spinner {
-    height: 150px; }
-    /* line 102, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
-    .arrow-spinner img {
-      width: 150px; }
-  /* line 106, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
-  .arrow {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-    /* line 108, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
-    .arrow img {
-      width: 75px; }
-  /* line 112, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
-  .arrow-spinner.resize {
-    height: 150px; }
-    /* line 114, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
-    .arrow-spinner.resize img {
-      width: 75px; }
-  /* line 119, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
-  .arrow.resize img {
-    width: 37.5px; } }
+/* line 103, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
+.arrow-spinner {
+  height: 150px; }
+  /* line 105, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
+  .arrow-spinner img {
+    width: 150px; }
+
+/* line 109, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  /* line 111, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
+  .arrow img {
+    width: 75px; }
+
+/* line 115, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
+.arrow-spinner.resize {
+  height: 150px; }
+  /* line 117, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
+  .arrow-spinner.resize img {
+    width: 75px; }
+
+/* line 122, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
+.arrow.resize img {
+  width: 37.5px; }
 
 @media (min-width: 640px) {
-  /* line 127, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
+  /* line 129, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
   .billboard {
     min-height: 407px;
     height: 407px; }
-  /* line 131, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
+  /* line 133, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
   section.second-slide {
     bottom: 35%; }
-  /* line 134, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
+  /* line 136, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
   section.first-slide.shrink {
     bottom: 60%; } }
 
 @media (min-width: 800px) {
-  /* line 139, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
+  /* line 141, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
   .billboard {
     min-height: 509px;
     height: 509px; }
-  /* line 143, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
+  /* line 145, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
   .arrow-spinner {
     height: 150px; }
-    /* line 145, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
+    /* line 147, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
     .arrow-spinner img {
       width: 300px; }
-  /* line 149, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
+  /* line 151, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
   .arrow {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0); }
-    /* line 151, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
+    /* line 153, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
     .arrow img {
       width: 150px; }
-  /* line 155, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
+  /* line 157, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
   .arrow-spinner.resize {
     height: 150px; }
-    /* line 157, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
+    /* line 159, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
     .arrow-spinner.resize img {
       width: 150px; }
-  /* line 162, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
+  /* line 164, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
   .arrow.resize img {
     width: 75px; } }
 
 @media (min-width: 1024px) {
-  /* line 168, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
+  /* line 170, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
   .billboard {
     min-height: 651px;
     height: 651px; }
-  /* line 172, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
+  /* line 174, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
   section.second-slide {
     bottom: 25%; } }
 
 @media (min-width: 1280px) {
-  /* line 177, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
+  /* line 179, /Applications/MAMP/htdocs/ux/sass/organisms/_top-animation.scss */
   .billboard {
     min-height: 814px;
     height: 814px; } }
@@ -452,295 +458,14 @@ section.load {
   position: center center;
   background-size: cover; }
 
-@media (min-width: 1px) {
-  .opening-animation {
-    font-size: .225rem; } }
-@media (min-width: 480px) {
-  .opening-animation {
-    font-size: .35rem; } }
-@media (min-width: 800px) {
-  .opening-animation {
-    font-size: .5rem; } }
-@media (min-width: 1024px) {
-  .opening-animation {
-    font-size: .75rem; } }
-@media (min-width: 1280px) {
-  .opening-animation {
-    font-size: 1rem; } }
-
-/* line 30, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-.floater {
-  width: 700px;
-  height: 700px;
-  background-color: rgba(255, 255, 255, 0.07);
-  position: absolute;
-  background-blend-mode: overlay;
-  transform: rotate(45deg); }
-
-/* line 38, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-section.first-slide, section.second-slide {
-  margin: 0 auto;
-  text-align: center;
-  width: calc(100% - 40px);
-  position: absolute; }
-
-/* line 44, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-section.first-slide {
-  bottom: 15%;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease; }
-
-/* line 48, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-section.first-slide.shrink {
-  bottom: 55%;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease; }
-
-/* line 52, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-section.second-slide {
-  display: none;
-  bottom: 30%;
-  opacity: 0;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease; }
-
-/* line 58, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-section.second-slide.shrink {
-  display: block;
-  opacity: 1;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease; }
-
-/* line 63, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-section.load, .billboard .content {
-  position: relative;
-  height: 100%; }
-
-/* line 67, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-.arrow {
-  position: absolute;
-  width: 150px;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  top: 30%;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease; }
-  /* line 74, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-  .arrow img {
-    position: absolute;
-    bottom: -75px;
-    left: 0px;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease; }
-  /* line 80, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-  .arrow p.fade-down {
-    text-transform: uppercase; }
-
-/* line 84, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-.arrow-spinner {
-  position: absolute;
-  width: 300px;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  top: 30%;
-  animation-name: spinner;
-  animation-timing-function: cubic-bezier(.42, 0, .58, 1);
-  animation-delay: .25s;
-  animation-duration: 1.5s;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease; }
-  /* line 95, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-  .arrow-spinner .scroll {
-    display: none; }
-
-/* line 99, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-.arrow.shrink, .arrow-spinner.shrink {
-  width: 50px;
-  height: auto;
-  bottom: 0px;
-  top: 50%;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease; }
-  /* line 105, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-  .arrow.shrink img, .arrow-spinner.shrink img {
-    transform: rotate(-180deg);
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease; }
-
-/* line 110, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-.arrow-spinner.shrink {
-  width: 100px;
-  top: inherit;
-  bottom: 25px;
-  text-align: center; }
-  /* line 116, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-  .arrow-spinner.shrink .scroll {
-    display: block;
-    top: 0;
-    opacity: 1;
-    -webkit-transition: all .25s ease;
-    -moz-transition: all .25s ease;
-    -ms-transition: all .25s ease;
-    -o-transition: all .25s ease;
-    transition: all .25s ease;
-    text-transform: uppercase; }
-
-/* line 124, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-.one-left {
-  animation-name: wobble-left-one;
-  animation-duration: 15s;
-  animation-iteration-count: infinite; }
-
-/* line 129, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-.two-left {
-  top: 30%;
-  animation-name: wobble-left-two;
-  animation-duration: 12s;
-  animation-iteration-count: infinite; }
-
-/* line 136, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-.one-right {
-  top: 20%;
-  animation-name: wobble-right-one;
-  animation-duration: 15s;
-  animation-iteration-count: infinite; }
-
-/* line 142, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-.two-right {
-  top: -10%;
-  animation-name: wobble-right-two;
-  animation-duration: 13s;
-  animation-iteration-count: infinite; }
-
-@media (min-width: 1px) {
-  /* line 150, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-  .arrow {
-    width: 75px; }
-    /* line 152, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-    .arrow img {
-      bottom: -37.5px; }
-  /* line 156, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-  .arrow-spinner {
-    animation-name: spinner-small;
-    width: 150px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    top: 30%; }
-  /* line 162, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-  .arrow.shrink, .arrow-spinner.shrink {
-    width: 25px; }
-  /* line 165, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-  .arrow-spinner.shrink {
-    width: 50px;
-    top: 81%; } }
-
-@media (min-width: 640px) {
-  /* line 173, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-  .billboard {
-    height: 407px; }
-  /* line 176, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-  section.second-slide {
-    bottom: 35%; }
-  /* line 179, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-  section.first-slide.shrink {
-    bottom: 60%; }
-  /* line 182, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-  .arrow-spinner.shrink, .arrow.shrink, .arrow-spinner.shrink {
-    top: 37%; }
-  /* line 185, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-  .arrow-spinner.shrink {
-    top: 77%; } }
-
-@media (min-width: 800px) {
-  /* line 190, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-  .billboard {
-    height: 509px; }
-  /* line 193, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-  .arrow {
-    width: 150px; }
-    /* line 195, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-    .arrow img {
-      bottom: -75px; }
-  /* line 199, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-  .arrow-spinner {
-    width: 300px;
-    animation-name: spinner; }
-  /* line 203, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-  .arrow.shrink, .arrow-spinner.shrink {
-    width: 50px; }
-  /* line 206, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-  .arrow-spinner.shrink {
-    width: 100px; }
-  /* line 209, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-  .arrow-spinner.shrink, .arrow.shrink, .arrow-spinner.shrink {
-    top: 45%; }
-  /* line 212, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-  .arrow-spinner.shrink {
-    top: 80%; } }
-
-@media (min-width: 1024px) {
-  /* line 217, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-  .billboard {
-    height: 651px; }
-  /* line 220, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-  section.second-slide {
-    bottom: 25%; }
-  /* line 223, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-  .arrow-spinner.shrink, .arrow.shrink, .arrow-spinner.shrink {
-    top: 58%; }
-  /* line 226, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-  .arrow-spinner.shrink {
-    top: 85%; } }
-
-@media (min-width: 1280px) {
-  /* line 231, /Applications/MAMP/htdocs/ux/sass/organisms/_billboard.scss */
-  .billboard {
-    height: 814px; } }
-
 /* line 1, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
 .portfolio {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 400px;
+  min-height: calc(100vh - 101px);
   background: #fff;
   color: #4a7997;
-  height: 560px;
   /******************************** SLIDES ********************************/
   /******************************** THUMBNAILS ********************************/
   /*Responsive
@@ -756,12 +481,12 @@ section.load, .billboard .content {
 		display: none;
 	}
 }    */ }
-  /* line 12, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+  /* line 11, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
   .portfolio .iS-Item h2 {
     position: absolute;
     z-index: 1;
-    top: 20px;
-    left: 60px;
+    top: 6%;
+    left: 10%;
     max-width: 80%;
     text-transform: uppercase;
     font-size: 40px;
@@ -769,96 +494,65 @@ section.load, .billboard .content {
     line-height: 30px;
     line-height: 1.875rem;
     font-weight: normal; }
-  /* line 23, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+  /* line 22, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
   .portfolio .iS-Item h2 span {
     font-weight: 100;
     font-size: 30px;
     font-size: 1.875rem; }
-  /* line 27, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+  /* line 26, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
   .portfolio .iS-Item p {
     position: absolute;
     z-index: 1;
-    top: 210px;
-    left: 60px;
+    top: 40%;
+    left: 10%;
     max-width: 80%;
-    font-size: 12px;
-    font-size: 0.75rem;
+    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 16px;
     line-height: 1rem;
     color: #a2a2a2; }
-  /* line 37, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+  /* line 36, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
   .portfolio .iS-Item img.product {
-    display: none;
-    max-width: 45%;
-    position: absolute;
-    z-index: 1;
-    right: 0;
-    top: 120px; }
-    /* line 44, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS-Item img.product.healbe {
-      top: 120px; }
-    /* line 47, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS-Item img.product.microarts {
-      max-width: 32%;
-      right: 10%;
-      top: 20px; }
-    /* line 52, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS-Item img.product.finsix {
-      top: 80px; }
-    /* line 55, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS-Item img.product.badlab {
-      max-width: 30%;
-      right: 10%;
-      top: 145px; }
-  /* line 61, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    display: none; }
+  /* line 39, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
   .portfolio .iS-Item img.logo {
     max-width: 60%;
     position: absolute;
     z-index: 1;
     left: 20%;
-    top: 100px; }
-    /* line 67, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS-Item img.logo.healbe {
-      top: 125px; }
-    /* line 70, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS-Item img.logo.microarts {
-      top: 120px; }
-    /* line 73, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS-Item img.logo.finsix {
-      top: 120px; }
-    /* line 76, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    top: 20%; }
+    /* line 51, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
     .portfolio .iS-Item img.logo.badlab {
       max-width: 50%; }
-  /* line 81, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+  /* line 55, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
   .portfolio .iS-Item img.btn {
     max-width: 60%;
     position: absolute;
     z-index: 1;
-    left: 60px;
-    top: 340px; }
-  /* line 91, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    left: 20%;
+    top: 70%; }
+  /* line 64, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
   .portfolio .iS.iS-SkinThumbnails {
     position: relative;
     top: 0px;
     left: 0px;
-    margin-bottom: 40px;
     width: 100%;
-    height: 520px; }
-  /* line 99, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    min-height: calc(100vh - 101px); }
+  /* line 71, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
   .portfolio .iS-SkinThumbnails .iS-Commands {
     position: absolute;
     width: 100%;
     height: 100%;
     left: 0px;
     top: 0px; }
-  /* line 106, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+  /* line 78, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
   .portfolio .iS-SkinThumbnails .iS-Content {
     position: absolute;
     width: 100%;
     height: 100%;
     left: 0px;
     top: 0px; }
-  /* line 113, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+  /* line 85, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
   .portfolio .iS-SkinThumbnails .iS-Items {
     position: absolute;
     width: 100%;
@@ -866,7 +560,7 @@ section.load, .billboard .content {
     top: 0px;
     left: 0px;
     overflow: hidden; }
-  /* line 121, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+  /* line 93, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
   .portfolio .iS-SkinThumbnails .iS-Item {
     position: absolute;
     width: 100%;
@@ -874,7 +568,7 @@ section.load, .billboard .content {
     top: 0px;
     left: 0px;
     overflow: hidden; }
-  /* line 129, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+  /* line 101, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
   .portfolio .iS-SkinThumbnails .iS-Previous {
     position: absolute;
     z-index: 3;
@@ -886,7 +580,7 @@ section.load, .billboard .content {
     bottom: 0;
     line-height: 108px;
     font-size: 4em; }
-  /* line 141, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+  /* line 113, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
   .portfolio .iS-SkinThumbnails .iS-Next {
     position: absolute;
     z-index: 3;
@@ -898,10 +592,10 @@ section.load, .billboard .content {
     bottom: 0;
     line-height: 108px;
     font-size: 4em; }
-  /* line 153, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+  /* line 125, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
   .portfolio .iS-SkinThumbnails .iS-Dots {
     display: none; }
-  /* line 156, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+  /* line 128, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
   .portfolio .iS-SkinThumbnails .iS-Loopline {
     position: absolute;
     z-index: 4;
@@ -909,352 +603,255 @@ section.load, .billboard .content {
     height: 5px;
     left: 0px;
     bottom: 110px; }
-  /* line 164, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-  .portfolio .iS-SkinThumbnails .iS-Dots {
-    position: absolute;
-    z-index: 3;
-    text-align: center;
-    left: 10%;
-    bottom: 0;
-    width: 80%;
-    height: 90px;
-    text-align: center;
-    overflow: hidden; }
-  /* line 175, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-  .portfolio .iS-SkinThumbnails .iS-Dot {
-    position: absolute;
-    z-index: 3;
-    cursor: pointer;
-    width: 180px;
-    height: 90px;
-    background: url(../imgs/home/thumbs/wbcl.png) no-repeat 0 0;
-    text-indent: -5000px;
-    overflow: hidden;
-    top: 0;
-    left: 0; }
-  /* line 187, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-  .portfolio .iS-SkinThumbnails .iS-Dot.healbe {
-    background: url(../imgs/home/thumbs/healbe.png) no-repeat 0 0;
-    left: 30px; }
-  /* line 191, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-  .portfolio .iS-SkinThumbnails .iS-Dot.microarts {
-    background: url(../imgs/home/thumbs/microarts.png) no-repeat 0 0;
-    left: 60px; }
-  /* line 195, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-  .portfolio .iS-SkinThumbnails .iS-Dot.finsix {
-    background: url(../imgs/home/thumbs/finsix.png) no-repeat 0 0;
-    left: 110px; }
-  /* line 199, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-  .portfolio .iS-SkinThumbnails .iS-Dot.badlab {
-    background: url(../imgs/home/thumbs/badlab.png) no-repeat 0 0;
-    left: 120px; }
-  /* line 203, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-  .portfolio .iS-SkinThumbnails .iS-Dotactive, .portfolio .iS-SkinThumbnails .iS-Dot.healbe.iS-Dotactive, .portfolio .iS-SkinThumbnails .iS-Dot.microarts.iS-Dotactive, .portfolio .iS-SkinThumbnails .iS-Dot.finsix.iS-Dotactive, .portfolio .iS-SkinThumbnails .iS-Dot.badlab.iS-Dotactive {
-    background-position: 0 -90px; }
-  /* line 206, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-  .portfolio .iS-SkinThumbnails .iS-Dotactive:after {
-    opacity: 1; }
 
 @media (min-width: 480px) {
-  /* line 225, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+  /* line 152, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
   .portfolio {
     /******************************** SLIDES ********************************/ }
-    /* line 236, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    /* line 159, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    .portfolio .iS-Item p {
+      top: 50%; }
+    /* line 164, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
     .portfolio .iS-Item img.logo {
       max-width: 40%;
       left: 30%; }
-      /* line 245, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+      /* line 167, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+      .portfolio .iS-Item img.logo.healbe {
+        top: 30%; }
+      /* line 170, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+      .portfolio .iS-Item img.logo.microarts {
+        top: 30%; }
+      /* line 173, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+      .portfolio .iS-Item img.logo.finsix {
+        top: 30%; }
+      /* line 176, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
       .portfolio .iS-Item img.logo.badlab {
-        max-width: 35%; }
-    /* line 249, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+        max-width: 30%; }
+    /* line 180, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
     .portfolio .iS-Item img.btn {
-      left: 100px; } }
-
-@media (min-width: 640px) {
-  /* line 256, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-  .portfolio {
-    height: 560px; } }
+      max-width: 40%;
+      left: 30%; } }
 
 @media (min-width: 800px) {
-  /* line 262, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+  /* line 191, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
   .portfolio {
-    height: 540px;
     /******************************** SLIDES ********************************/ }
-    /* line 264, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    /* line 192, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
     .portfolio .iS-SkinThumbnails .iS-Dots {
       display: block; }
-    /* line 267, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    /* line 195, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
     .portfolio .iS-SkinThumbnails .iS-Previous {
-      width: 10%; }
-    /* line 270, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+      width: 10%;
+      bottom: 2%; }
+    /* line 199, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
     .portfolio .iS-SkinThumbnails .iS-Next {
-      width: 10%; }
-    /* line 273, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS.iS-SkinThumbnails {
-      width: 100%;
-      height: 500px; }
-    /* line 280, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS-Item h2 {
-      font-size: 80px;
-      font-size: 5rem;
-      line-height: 60px;
-      line-height: 3.75rem; }
-    /* line 284, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS-Item h2 span {
-      font-size: 40px;
-      font-size: 2.5rem; }
-    /* line 287, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS-Item p {
-      top: 180px;
-      left: 60px;
-      max-width: 50%;
-      font-size: 16px;
-      font-size: 1rem;
-      line-height: 20px;
-      line-height: 1.25rem; }
-    /* line 294, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS-Item img.product {
-      display: block;
-      max-width: 40%;
-      right: 0;
-      top: 140px; }
-      /* line 299, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-      .portfolio .iS-Item img.product.healbe {
-        top: 120px; }
-      /* line 302, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-      .portfolio .iS-Item img.product.microarts {
-        max-width: 40%;
-        right: 0;
-        top: 20px; }
-      /* line 307, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-      .portfolio .iS-Item img.product.finsix {
-        top: 120px; }
-      /* line 310, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-      .portfolio .iS-Item img.product.badlab {
-        max-width: 30%;
-        right: 0%;
-        top: 150px; }
-    /* line 316, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS-Item img.logo {
-      max-width: 20%;
-      right: 8%;
-      left: auto;
-      top: 60px; }
-      /* line 323, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-      .portfolio .iS-Item img.logo.microarts {
-        display: none; }
-      /* line 326, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-      .portfolio .iS-Item img.logo.finsix {
-        right: 10%;
-        top: 60px; }
-      /* line 330, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-      .portfolio .iS-Item img.logo.badlab {
-        max-width: 20%;
-        right: 5%; }
-    /* line 335, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS-Item img.btn {
-      max-width: 30%;
-      left: 60px;
-      top: 320px; } }
-
-@media (min-width: 1024px) {
-  /* line 344, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-  .portfolio {
-    height: 580px;
-    /******************************** SLIDES ********************************/ }
-    /* line 352, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS.iS-SkinThumbnails {
-      height: 540px; }
-    /* line 364, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS-Item img.product {
-      top: 180px; }
-      /* line 366, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-      .portfolio .iS-Item img.product.healbe {
-        top: 140px; }
-      /* line 369, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-      .portfolio .iS-Item img.product.microarts {
-        max-width: 30%;
-        right: 0;
-        top: 40px; }
-      /* line 374, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-      .portfolio .iS-Item img.product.finsix {
-        top: 120px; }
-      /* line 377, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-      .portfolio .iS-Item img.product.badlab {
-        max-width: 30%;
-        right: 0%;
-        top: 150px; }
-    /* line 384, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS-Item img.logo.healbe {
-      top: 60px; }
-    /* line 387, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS-Item img.logo.microarts {
-      display: none; }
-    /* line 392, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS-Item img.logo.badlab {
-      max-width: 15%;
-      right: 8%; }
-    /* line 397, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS-Item img.btn {
-      max-width: 30%;
-      left: 60px;
-      top: 320px; } }
-
-@media (min-width: 1280px) {
-  /* line 406, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-  .portfolio {
-    height: 580px;
-    /******************************** SLIDES ********************************/ }
-    /* line 414, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS.iS-SkinThumbnails {
-      height: 540px; }
-    /* line 420, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS-Item h2 {
-      font-size: 100px;
-      font-size: 6.25rem;
-      line-height: 80px;
-      line-height: 5rem; }
-    /* line 424, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS-Item h2 span {
-      font-size: 60px;
-      font-size: 3.75rem; }
-    /* line 427, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS-Item p {
-      top: 210px; }
-    /* line 430, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS-Item img.product {
-      top: 180px; }
-      /* line 432, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-      .portfolio .iS-Item img.product.healbe {
-        top: 140px; }
-      /* line 435, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-      .portfolio .iS-Item img.product.microarts {
-        max-width: 30%;
-        right: 0;
-        top: 20px; }
-      /* line 440, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-      .portfolio .iS-Item img.product.finsix {
-        max-width: 36%;
-        top: 100px;
-        right: 5%; }
-      /* line 445, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-      .portfolio .iS-Item img.product.badlab {
-        max-width: 30%;
-        right: 5%;
-        top: 130px; }
-    /* line 451, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS-Item img.logo {
-      top: 40px; }
-      /* line 455, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-      .portfolio .iS-Item img.logo.microarts {
-        display: none; }
-      /* line 458, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-      .portfolio .iS-Item img.logo.finsix {
-        top: 20px;
-        right: 13%; }
-      /* line 462, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-      .portfolio .iS-Item img.logo.badlab {
-        max-width: 15%;
-        right: 15%;
-        top: 20px; }
-    /* line 468, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS-Item img.btn {
-      max-width: 20%;
-      left: 60px;
-      top: 310px; } }
-
-@media (min-width: 1920px) {
-  /* line 477, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-  .portfolio {
-    height: 880px;
-    /******************************** SLIDES ********************************/ }
-    /* line 485, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS.iS-SkinThumbnails {
-      height: 840px; }
-    /* line 491, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS-Item h2 {
-      font-size: 120px;
-      font-size: 7.5rem;
-      line-height: 100px;
-      line-height: 6.25rem; }
-    /* line 495, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS-Item h2 span {
-      font-size: 80px;
-      font-size: 5rem; }
-    /* line 498, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS-Item p {
-      top: 260px;
-      max-width: 40%; }
-    /* line 502, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS-Item img.product {
-      max-width: 50%;
-      top: 220px; }
-      /* line 505, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-      .portfolio .iS-Item img.product.healbe {
-        max-width: 45%;
-        top: 160px; }
-      /* line 509, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-      .portfolio .iS-Item img.product.microarts {
-        max-width: 30%;
-        right: 5%;
-        top: 20px; }
-      /* line 514, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-      .portfolio .iS-Item img.product.finsix {
-        top: 130px; }
-      /* line 517, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-      .portfolio .iS-Item img.product.badlab {
-        top: 150px; }
-    /* line 521, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS-Item img.logo {
-      top: 40px;
-      right: 12%; }
-      /* line 526, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-      .portfolio .iS-Item img.logo.microarts {
-        display: none; }
-      /* line 529, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-      .portfolio .iS-Item img.logo.finsix {
-        top: 40px;
-        right: 13%; }
-      /* line 533, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-      .portfolio .iS-Item img.logo.badlab {
-        max-width: 15%;
-        right: 15%;
-        top: 20px; }
-    /* line 539, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
-    .portfolio .iS-Item img.btn {
-      max-width: 20%;
-      left: 60px;
-      top: 360px; }
-    /* line 545, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+      width: 10%;
+      bottom: 2%; }
+    /* line 206, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    .portfolio .iS-SkinThumbnails .iS-Dots {
+      position: absolute;
+      z-index: 3;
+      text-align: center;
+      left: 10%;
+      bottom: 2%;
+      width: 80%;
+      height: 90px;
+      text-align: center;
+      overflow: hidden; }
+    /* line 217, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
     .portfolio .iS-SkinThumbnails .iS-Dot {
       position: absolute;
       z-index: 3;
       cursor: pointer;
-      width: 240px;
-      height: 120px;
+      width: 180px;
+      height: 90px;
       background: url(../imgs/home/thumbs/wbcl.png) no-repeat 0 0;
       text-indent: -5000px;
       overflow: hidden;
       top: 0;
-      left: 60px; }
-    /* line 557, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+      left: 0; }
+    /* line 229, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
     .portfolio .iS-SkinThumbnails .iS-Dot.healbe {
       background: url(../imgs/home/thumbs/healbe.png) no-repeat 0 0;
-      left: 90px; }
-    /* line 561, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+      left: 10%; }
+    /* line 233, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
     .portfolio .iS-SkinThumbnails .iS-Dot.microarts {
       background: url(../imgs/home/thumbs/microarts.png) no-repeat 0 0;
-      left: 180px; }
-    /* line 565, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+      left: 15%; }
+    /* line 237, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
     .portfolio .iS-SkinThumbnails .iS-Dot.finsix {
       background: url(../imgs/home/thumbs/finsix.png) no-repeat 0 0;
-      left: 270px; }
-    /* line 569, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+      left: 25%; }
+    /* line 241, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
     .portfolio .iS-SkinThumbnails .iS-Dot.badlab {
       background: url(../imgs/home/thumbs/badlab.png) no-repeat 0 0;
-      left: 270px; }
-    /* line 573, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+      left: 30%; }
+    /* line 245, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
     .portfolio .iS-SkinThumbnails .iS-Dotactive, .portfolio .iS-SkinThumbnails .iS-Dot.healbe.iS-Dotactive, .portfolio .iS-SkinThumbnails .iS-Dot.microarts.iS-Dotactive, .portfolio .iS-SkinThumbnails .iS-Dot.finsix.iS-Dotactive, .portfolio .iS-SkinThumbnails .iS-Dot.badlab.iS-Dotactive {
-      background-position: 0 -90px; } }
+      background-position: 0 -90px; }
+    /* line 248, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    .portfolio .iS-SkinThumbnails .iS-Dotactive:after {
+      opacity: 1; }
+    /* line 254, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    .portfolio .iS-Item h2 {
+      left: 5%;
+      font-size: 80px;
+      font-size: 5rem;
+      line-height: 60px;
+      line-height: 3.75rem; }
+    /* line 259, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    .portfolio .iS-Item h2 span {
+      font-size: 40px;
+      font-size: 2.5rem; }
+    /* line 262, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    .portfolio .iS-Item p {
+      top: 35%;
+      max-width: 50%;
+      left: 5%;
+      font-size: 16px;
+      font-size: 1rem;
+      line-height: 20px;
+      line-height: 1.25rem; }
+    /* line 269, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    .portfolio .iS-Item img.product {
+      display: block;
+      max-width: 40%;
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      top: 35%; }
+      /* line 278, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+      .portfolio .iS-Item img.product.microarts {
+        top: 15%; }
+      /* line 283, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+      .portfolio .iS-Item img.product.badlab {
+        max-width: 30%;
+        right: 5%; }
+    /* line 288, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    .portfolio .iS-Item img.logo {
+      max-width: 25%;
+      right: 5%;
+      left: auto;
+      top: 15%; }
+      /* line 293, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+      .portfolio .iS-Item img.logo.healbe {
+        top: 15%; }
+      /* line 296, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+      .portfolio .iS-Item img.logo.microarts {
+        display: none; }
+      /* line 299, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+      .portfolio .iS-Item img.logo.finsix {
+        top: 15%; }
+      /* line 302, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+      .portfolio .iS-Item img.logo.badlab {
+        max-width: 20%;
+        right: 10%; }
+    /* line 307, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    .portfolio .iS-Item img.btn {
+      max-width: 30%;
+      left: 5%;
+      top: 60%; } }
+
+@media (min-width: 1024px) {
+  /* line 316, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+  .portfolio {
+    /******************************** SLIDES ********************************/ }
+    /* line 338, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    .portfolio .iS-Item img.product.microarts {
+      max-width: 35%; }
+    /* line 341, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    .portfolio .iS-Item img.product.finsix {
+      top: 30%; } }
+
+@media (min-width: 1280px) {
+  /* line 363, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+  .portfolio {
+    /******************************** SLIDES ********************************/ }
+    /* line 375, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    .portfolio .iS-Item h2 {
+      font-size: 100px;
+      font-size: 6.25rem;
+      line-height: 80px;
+      line-height: 5rem;
+      top: 2%; }
+    /* line 380, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    .portfolio .iS-Item h2 span {
+      font-size: 60px;
+      font-size: 3.75rem; }
+    /* line 383, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    .portfolio .iS-Item p {
+      top: 37%; }
+    /* line 387, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    .portfolio .iS-Item img.product {
+      top: 40%; }
+      /* line 389, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+      .portfolio .iS-Item img.product.healbe {
+        top: 35%;
+        right: 5%; }
+      /* line 393, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+      .portfolio .iS-Item img.product.microarts {
+        max-width: 30%;
+        right: 5%; }
+      /* line 397, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+      .portfolio .iS-Item img.product.finsix {
+        max-width: 35%;
+        right: 5%; }
+      /* line 401, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+      .portfolio .iS-Item img.product.badlab {
+        top: 30%; }
+    /* line 405, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    .portfolio .iS-Item img.logo {
+      top: 10%; }
+      /* line 407, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+      .portfolio .iS-Item img.logo.healbe {
+        right: 12%; }
+      /* line 412, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+      .portfolio .iS-Item img.logo.finsix {
+        right: 10%; }
+      /* line 415, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+      .portfolio .iS-Item img.logo.badlab {
+        right: 15%;
+        max-width: 15%; }
+    /* line 420, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    .portfolio .iS-Item img.btn {
+      top: 55%; }
+    /* line 426, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    .portfolio .iS-SkinThumbnails .iS-Dot.healbe {
+      left: 3%; }
+    /* line 429, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    .portfolio .iS-SkinThumbnails .iS-Dot.microarts {
+      left: 6%; }
+    /* line 432, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    .portfolio .iS-SkinThumbnails .iS-Dot.finsix {
+      left: 12%; }
+    /* line 435, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    .portfolio .iS-SkinThumbnails .iS-Dot.badlab {
+      left: 15%; } }
+
+@media (min-width: 1920px) {
+  /* line 441, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+  .portfolio {
+    /******************************** SLIDES ********************************/ }
+    /* line 445, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    .portfolio .iS-Item p {
+      font-size: 20px;
+      font-size: 1.25rem;
+      line-height: 24px;
+      line-height: 1.5rem; }
+    /* line 450, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    .portfolio .iS-SkinThumbnails .iS-Dot {
+      left: 5%; }
+    /* line 453, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    .portfolio .iS-SkinThumbnails .iS-Dot.healbe {
+      left: 15%; }
+    /* line 456, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    .portfolio .iS-SkinThumbnails .iS-Dot.microarts {
+      left: 25%; }
+    /* line 459, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    .portfolio .iS-SkinThumbnails .iS-Dot.finsix {
+      left: 35%; }
+    /* line 462, /Applications/MAMP/htdocs/ux/sass/organisms/_portfolio.scss */
+    .portfolio .iS-SkinThumbnails .iS-Dot.badlab {
+      left: 40%; } }
 
 /*# sourceMappingURL=main.css.map */
