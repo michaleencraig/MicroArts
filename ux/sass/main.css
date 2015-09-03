@@ -209,7 +209,7 @@ nav.sub-nav li a {
 
   /* line 15, /Applications/MAMP/htdocs/ux/sass/atoms/_animations.scss */
   50% {
-    left: -39%; }
+    left: -37%; }
 
   /* line 16, /Applications/MAMP/htdocs/ux/sass/atoms/_animations.scss */
   100% {
@@ -222,7 +222,7 @@ nav.sub-nav li a {
 
   /* line 21, /Applications/MAMP/htdocs/ux/sass/atoms/_animations.scss */
   50% {
-    left: -44%; }
+    left: -36%; }
 
   /* line 22, /Applications/MAMP/htdocs/ux/sass/atoms/_animations.scss */
   100% {
@@ -235,7 +235,7 @@ nav.sub-nav li a {
 
   /* line 27, /Applications/MAMP/htdocs/ux/sass/atoms/_animations.scss */
   50% {
-    right: -39%; }
+    right: -34%; }
 
   /* line 28, /Applications/MAMP/htdocs/ux/sass/atoms/_animations.scss */
   100% {
@@ -485,7 +485,7 @@ section.load {
   /* line 19, /Applications/MAMP/htdocs/ux/sass/organisms/_middle-animation.scss */
   .billboard.middle-animation .one-third div.title {
     position: relative;
-    top: 80px;
+    top: 70px;
     width: 75%;
     margin: 0 auto;
     opacity: 0; }

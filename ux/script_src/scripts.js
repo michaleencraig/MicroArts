@@ -41,9 +41,9 @@ setTimeout(function(){
 });
 
 var spinner = new TimelineMax()
-.add(TweenMax.to(".one-third.first > img", 7.5, {rotation: -360, opacity: 1, transformOrigin:"center center", ease: Expo.easeOut, delay: .25}))
-.add(TweenMax.to(".one-third.second > img", 7.5, {rotation: -360, opacity: 1, transformOrigin:"center center", ease: Expo.easeOut, delay: .35}))
-.add(TweenMax.to(".one-third.third > img", 7.5, {rotation: -360, opacity: 1, transformOrigin:"center center", ease: Expo.easeOut, delay: .45}));
+.add(TweenMax.to(".one-third.first > img", 7.5, {rotation: -180, opacity: 1, transformOrigin:"center center", ease: Expo.easeOut, delay: .25}))
+.add(TweenMax.to(".one-third.second > img", 7.5, {rotation: -180, opacity: 1, transformOrigin:"center center", ease: Expo.easeOut, delay: .35}))
+.add(TweenMax.to(".one-third.third > img", 7.5, {rotation: -180, opacity: 1, transformOrigin:"center center", ease: Expo.easeOut, delay: .45}));
 
 var spinner_text = new TimelineMax()
 .add(TweenMax.to(".middle-animation .one-third.first .title", 3.75, {opacity: 1, ease: Expo.easeOut, delay: .25}))
