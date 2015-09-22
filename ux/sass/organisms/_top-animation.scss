@@ -1,21 +1,3 @@
-.opening-animation {
-    @media( min-width: $xxs-breakpoint){
-        font-size: .225rem;
-    }
-    @media( min-width: $xs-breakpoint){
-            font-size: .35rem;
-    }
-    @media( min-width: $md-breakpoint){
-            font-size: .5rem;
-    }
-    @media( min-width: $lg-breakpoint){
-            font-size: .75rem;
-    }
-    @media( min-width: $xl-breakpoint){
-            font-size: 1rem;
-    }
-}
-
 // Homepage Animation Section
 
 // Floating Boxes
@@ -23,7 +5,7 @@
     width: 700px;
     height: 700px;
     background-color: $floater;
-    position: absolute;
+    position: fixed;
     transform: rotate(45deg);
 }
 
@@ -48,7 +30,7 @@
 section.first-slide, section.second-slide {
     margin: 0 auto;
     text-align: center;
-    position: absolute;
+    position: fixed;
     @include center(true, false);
     width: 100%;
 }
@@ -66,13 +48,13 @@ section.second-slide {
 }
 
 section.first-slide {
-    top: 65%;
+    top: 70%;
 }
 
 section.load {
-    position: absolute;
+    position: fixed;
     @include center(true, false);
-    top: 15%;
+    top: 25%;
 }
 
 .arrow {
@@ -96,7 +78,7 @@ section.load {
         display: block;
         opacity: 0;
         text-transform: uppercase;
-        position: absolute;
+        position: fixed;
         @include center(true, false);
     }
 }

@@ -350,8 +350,9 @@
                             <h3 class="small light">The</h3>
                             <h3 class="small">Strategy</h3>
                             <h4 class="small light">That defines your <br/ >difference.</h4>
+                            <p class="light">Stand out in a crowded market, with brand strategies that change the conversation for your audience.</p>
                         </div>
-                        <p class="light">Stand out in a crowded market, with brand strategies that change the conversation for your audience.</p>
+                        
                     </div>
                     <div class="one-third second">
                         <img src="ux/imgs/home/spin-middle.png" alt="Arrows Spinning" />
@@ -359,8 +360,9 @@
                             <h3 class="small light">The</h3>
                             <h3 class="small">Creative</h3>
                             <h4 class="small light">That disrupts your <br/ >category.</h4>
+                            <p class="light">Carve out a space you can own, with positioning, messaging, and design that redefines your place in the market.</p>
                         </div>
-                        <p class="light">Carve out a space you can own, with positioning, messaging, and design that redefines your place in the market.</p>
+                        
                     </div>
                     <div class="one-third third">
                         <img src="ux/imgs/home/spin-middle.png" alt="Arrows Spinning" />
@@ -368,8 +370,9 @@
                             <h3 class="small light">The</h3>
                             <h3 class="small">Campaigns</h3>
                             <h4 class="small light">That defy<br/ >expectations.</h4>
+                            <p class="light">Stop your audience in their tracks, with simple, memorable, and emotionally powerful brand experiences.</p>
                         </div>
-                        <p class="light">Stop your audience in their tracks, with simple, memorable, and emotionally powerful brand experiences.</p>
+                        
                     </div>
                 </section>
                 <section class="action">
