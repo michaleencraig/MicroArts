@@ -33,7 +33,6 @@ TweenMax.to(".arrow-spinner > img", .35, {top: "50%", delay: 4});
 TweenMax.to(".arrow > img", .35, {transformOrigin:"center center", delay: 4});
 TweenMax.to(".arrow", .35, {top: "75%", delay: 4});
 TweenMax.to(".second-slide", .65, {bottom: "auto", top: "50%", opacity: 1, delay: 4});   
-
 setTimeout(function(){
     $('.arrow-spinner, .arrow').addClass('resize');
 }, 4000);
