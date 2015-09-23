@@ -16,8 +16,14 @@ html{
 }
 
 .one-third {
-    width: calc(100% / 3);
+    width: 100%;
     float: left;
+}
+
+@media(min-width: $md-breakpoint){
+    .one-third {
+        width: calc(100% / 3);
+    }
 }
 
 @media( min-width: $lg-breakpoint){

@@ -1,11 +1,11 @@
 .billboard.middle-animation {
-    min-height: calc(100vh - 101px);
     padding: 0 5%;
     width: 90%;
     text-align: center;
+    height: 100%;
 }
 .billboard.middle-animation .content {
-    margin-top: 10vh;
+    margin-top: 5vh;
 }
 .billboard.middle-animation {
     .one-third.first > img, .one-third.second > img, .one-third.third > img {
@@ -15,7 +15,11 @@
 .billboard.middle-animation .one-third {
     font-size: 1.5rem;
     position: relative;
-    min-height: 380px;
+    min-height: 450px;
+    clear: both;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
     div.title {
         position: relative;
         top: 70px;
@@ -31,6 +35,8 @@
         font-size: 1rem;
         opacity: 0;
         width: 100%;
+        position: relative;
+        top: 7.5em;
     }
 }
 section.title-block {
@@ -44,6 +50,15 @@ section.title-block {
 @media(min-width: $md-breakpoint){
 }
 @media(min-width: $lg-breakpoint){
+    .billboard.middle-animation {
+        min-height: calc(100vh - 101px);
+    }
+    .billboard.middle-animation .content {
+        margin-top: 10vh;
+    }
+    .billboard.middle-animation .one-third {
+        display: inline-block;
+    }
 }
 @media(min-width: $xl-breakpoint){
 }

@@ -13,7 +13,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
         <title>MicroArts Creative Agency</title>
-        <link href='https://fonts.googleapis.com/css?family=Lato:400,100,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,100,200,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="<?php echo $styles_dir;?>main.css">
         <link rel="stylesheet" href="<?php echo $styles_dir;?>font-awesome.min.css" type="text/css" media="all" />
         <link rel="stylesheet" href="<?php echo $styles_dir;?>loading-bars.css" type="text/css" media="all" />
