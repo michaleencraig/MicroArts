@@ -13,7 +13,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
         <title>MicroArts Creative Agency</title>
-        <link href='https://fonts.googleapis.com/css?family=Lato:400,100,200,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="<?php echo $styles_dir;?>main.css">
         <link rel="stylesheet" href="<?php echo $styles_dir;?>font-awesome.min.css" type="text/css" media="all" />
         <link rel="stylesheet" href="<?php echo $styles_dir;?>loading-bars.css" type="text/css" media="all" />
@@ -46,12 +46,12 @@
                     <h3 class="small">Strategy, Design, and Communications<br />to reinvent your place in the market.</h3>
                 </section>
                 <section class="load">
-                    <div class="arrow-spinner">
-                        <div class="arrow">
-                            <img src="ux/imgs/home/arrow.png" alt="MicroArts Logo" />
-                        </div>
+                    <div class="arrow-spinner resize">
                         <img src="ux/imgs/home/spinner.png" alt="Arrows Spinning" />
                         <span class="scroll">Scroll</span>
+                        <div class="arrow resize">
+                            <img src="ux/imgs/home/arrow.png" alt="MicroArts Logo" />
+                        </div>
                     </div>
                 </section>
             </div>
@@ -359,7 +359,7 @@
                         <div class="title">
                             <h3 class="small light">The</h3>
                             <h3 class="small">Creative</h3>
-                            <h4 class="small light">That disrupts your <br/ >category.</h4>
+                            <h4 class="small light">That disrupts your category.</h4>
                             <p class="light">Carve out a space you can own, with positioning, messaging, and design that redefines your place in the market.</p>
                         </div>
                         

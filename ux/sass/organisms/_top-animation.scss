@@ -25,21 +25,20 @@
     bottom: 0%;
 }
 
-
-// Other Animations
-section.first-slide, section.second-slide {
-    margin: 0 auto;
-    text-align: center;
-    position: fixed;
-    @include center(true, false);
-    width: 100%;
-}
-section.second-slide {
-    opacity: 0;
-}
-
 .billboard.opening-animation {
     min-height: calc(100vh - 101px);
+}
+
+.first-slide, .second-slide {
+    text-align: center;
+}
+
+.billboard.opening-animation .first-slide {
+    margin: 7.5vh 0 7.5vh 0;
+}
+
+.billboard.opening-animation .load {
+    margin: 7.5vh 0 0 0;
 }
 
 .billboard, .billboard .content {
@@ -47,64 +46,30 @@ section.second-slide {
     height: 100%;
 }
 
-section.first-slide {
-    top: 70%;
-}
-
-section.load {
-    position: fixed;
-    @include center(true, false);
-    top: 25%;
-}
-
-.arrow {
-    margin: 0 auto;
-    text-align: center;
-    img {
-        height: auto;
-        position: relative;
-    }
-}
 .arrow-spinner {
     margin: 0 auto;
     text-align: center;
-    position: relative;
     img {
+        width: $arrow-size / 4;
         height: auto;
-        clear: both;
-        position: relative;
     }
     span.scroll {
         display: block;
-        opacity: 0;
-        text-transform: uppercase;
-        position: fixed;
-        @include center(true, false);
-    }
-}
-.arrow-spinner {
-    height: 150px;
-    img {
-        width: $arrow-size / 2;
     }
 }
 .arrow {
-    @include center(true, true);
+    position: relative;
+    top: -($arrow-size*.235);
+    margin: 0 auto;
+    text-align: center;
+    transform: rotate(180deg);
     img {
-        width: $arrow-size / 4;
-    }
-}
-.arrow-spinner.resize {
-    height: 150px;
-    img {
-        width: $arrow-size / 4;
-    }
-}
-.arrow.resize {
-    img {
+        height: auto;
+        position: relative;
         width: $arrow-size / 8;
     }
 }
+
 @media(min-width: $xs-breakpoint){ 
 }
 @media(min-width: $sm-breakpoint){
@@ -112,11 +77,23 @@ section.load {
         min-height: 407px;
         height: 407px;
     }
-    section.second-slide {
-        bottom: 35%;
+    .billboard.opening-animation .first-slide {
+        margin: 15vh 0 15vh 0;
     }
-    section.first-slide.shrink {
-        bottom: 60%;
+
+    .billboard.opening-animation .load {
+        margin: 15vh 0 0 0;
+    }
+    .arrow-spinner {
+        img {
+            width: $arrow-size / 2;
+        }
+    }
+    .arrow {
+        top: -125px;
+        img {
+            width: $arrow-size / 4;
+        }
     }
 }
 @media(min-width: $md-breakpoint){
@@ -124,46 +101,32 @@ section.load {
         min-height: 509px;
         height: 509px;
     }
-    .arrow-spinner {
-        height: 150px;
-        img {
-            width: $arrow-size;
-        }
-    }
-    .arrow {
-        @include center(true, false);
-        img {
-            width: $arrow-size / 2;
-        }
-    }
-    .arrow-spinner.resize {
-        height: 150px;
-        img {
-            width: $arrow-size / 2;
-            @include transition($transition-speed all);
-        }
-        @include transition($transition-speed all);
-    }
-    .arrow.resize {
-        img {
-            width: $arrow-size / 4;
-            @include transition($transition-speed all);
-        }
-    }
 }
 @media(min-width: $lg-breakpoint){
     .billboard {
         min-height: 651px;
         height: 651px;
     }
-    section.second-slide {
-        bottom: 25%;
-    }
 }
 @media(min-width: $xl-breakpoint){
     .billboard {
         min-height: 814px;
         height: 814px;
+    }
+    .floater.one-left {
+        left: -15%;
+    }
+    .floater.two-left {
+        left: -13%;
+        top: 40%;
+    }
+    .floater.one-right {
+        right: -16%;
+        top: -20%;
+    }
+    .floater.two-right {
+        right: -14%;
+        bottom: 0%;
     }
 }
 @media(min-width: $xxl-breakpoint){

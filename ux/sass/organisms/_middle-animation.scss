@@ -3,17 +3,23 @@
     width: 90%;
     text-align: center;
     height: 100%;
+    overflow: hidden;
 }
-.billboard.middle-animation .content {
-    margin-top: 5vh;
+
+.middle-animation .floater {
+    opacity: 0;
 }
+
+.billboard.middle-animation .title-block {
+    margin: 7.5vh 0;
+}
+
 .billboard.middle-animation {
     .one-third.first > img, .one-third.second > img, .one-third.third > img {
         opacity: 0;
     }
 }
 .billboard.middle-animation .one-third {
-    font-size: 1.5rem;
     position: relative;
     min-height: 450px;
     clear: both;
@@ -22,8 +28,9 @@
     text-align: center;
     div.title {
         position: relative;
-        top: 70px;
-        width: 75%;
+        top: 80px;
+        width: 95%;
+        max-width: 300px;
         margin: 0 auto;
         opacity: 0;
     }
@@ -32,11 +39,10 @@
         position: absolute;
     }
     p {
-        font-size: 1rem;
         opacity: 0;
         width: 100%;
         position: relative;
-        top: 7.5em;
+        top: 6.5em;
     }
 }
 section.title-block {
@@ -52,12 +58,13 @@ section.title-block {
 @media(min-width: $lg-breakpoint){
     .billboard.middle-animation {
         min-height: calc(100vh - 101px);
-    }
-    .billboard.middle-animation .content {
-        margin-top: 10vh;
+        max-height: 100vh;
     }
     .billboard.middle-animation .one-third {
-        display: inline-block;
+        display: block;
+        width: calc(100% / 3);
+        float: left;
+        clear: none;
     }
 }
 @media(min-width: $xl-breakpoint){

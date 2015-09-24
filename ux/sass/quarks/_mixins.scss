@@ -105,7 +105,7 @@
 }
 
 @mixin center($horizontal: true, $vertical: true) {
-    position: fixed;
+    position: absolute;
     @if ($horizontal and $vertical) {
     top: 50%;
     left: 50%;
