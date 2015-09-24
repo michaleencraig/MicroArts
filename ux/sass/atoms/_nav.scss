@@ -1,23 +1,22 @@
 nav {
+    float: right;
+    @include uppercase;
 	ul{
 		list-style: none;
 	}
 }
-nav.sub-nav{
-			li{
-				a{
-					margin: 0 0 0 ($content-padding - 5);
-				}
-            }
-}
 
-@media(min-width: $md-breakpoint) {
-nav.sub-nav{
-			li{
-				a{
-					margin: 0;
-				}
+@media(min-width: $lg-breakpoint) {
+    nav {
+        ul{
+            li {
+                display: inline-block;
+                padding: 0 1.75em 0 0;
+                line-height: 61px;
+                &:last-of-type {
+                    padding: 0;
+                }
             }
-}
-
+        }
+    }
 }
