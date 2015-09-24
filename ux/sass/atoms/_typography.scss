@@ -10,7 +10,7 @@ body {
 p {
     color: $white;
 }
-a{
+a {
 	color: $link-color;
 	@include transition(all $transition-speed $transition-ease);
 	text-decoration: none;

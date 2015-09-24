@@ -1,17 +1,17 @@
 .primary-header{
-  width: 100%;
-  position: fixed;
-  z-index: 9999;
-  padding: 20px 0;
-  background: #fff;
-  a.logo{
-		width: 304px;
-		height: 61px;
-		text-indent: 200%;
-		white-space: nowrap;
-		overflow: hidden;
-		background: url(../imgs/microarts.gif) no-repeat 0 0;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    background: #fff;
+    padding: 20px 0;
+    a.logo{
+        width: 304px;
+        height: 61px;
+        text-indent: 200%;
+        white-space: nowrap;
+        overflow: hidden;
+        background: url(../imgs/microarts.gif) no-repeat 0 0;
         display: block;
         float: left;
-	}
+    }
 }
