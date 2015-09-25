@@ -77,13 +77,6 @@
         min-height: 407px;
         height: 407px;
     }
-    .billboard.opening-animation .first-slide {
-        margin: 15vh 0 15vh 0;
-    }
-
-    .billboard.opening-animation .load {
-        margin: 15vh 0 0 0;
-    }
     .arrow-spinner {
         img {
             width: $arrow-size / 2;
@@ -100,6 +93,15 @@
     .billboard {
         min-height: 509px;
         height: 509px;
+    }
+}
+@media(min-width: $sm-breakpoint) and (min-height: $lg-breakpoint) {
+    .billboard.opening-animation .first-slide {
+        margin: 15% 0 15% 0;
+    }
+
+    .billboard.opening-animation .load {
+        margin: 15% 0 0 0;
     }
 }
 @media(min-width: $lg-breakpoint){
