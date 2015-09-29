@@ -16,10 +16,10 @@
 
 $(document).ready(function(){
 // Icebergs
-TweenMax.to(".floater.one-left", 18, {scale: 1.5, left: "-30%", yoyo: true, repeat: -1, ease: Power0.easeNone});
-TweenMax.to(".floater.two-left", 14, {scale: 1.25, left: "-25%", yoyo: true, repeat: -1, ease: Power0.easeNone});
-TweenMax.to(".floater.one-right", 19, {scale: 1.5, right: "-24%", yoyo: true, repeat: -1, ease: Power0.easeNone});
-TweenMax.to(".floater.two-right", 15, {scale: 1.25, right: "-24.5%", yoyo: true, repeat: -1, ease: Power0.easeNone});
+TweenMax.to(".floater.one-left", 18, {scale: 1.75, left: "-40%", yoyo: true, repeat: -1, ease: Power0.easeNone});
+TweenMax.to(".floater.two-left", 14, {scale: 1.5, left: "-35%", yoyo: true, repeat: -1, ease: Power0.easeNone});
+TweenMax.to(".floater.one-right", 19, {scale: 1.75, right: "-29%", yoyo: true, repeat: -1, ease: Power0.easeNone});
+TweenMax.to(".floater.two-right", 15, {scale: 1.25, right: "-28.5%", yoyo: true, repeat: -1, ease: Power0.easeNone});
 });
 
 var spinner = new TimelineMax()
@@ -41,8 +41,8 @@ var controller = new ScrollMagic.Controller();
 var spin_animation = new ScrollMagic.Scene ({
         triggerElement: ".middle-animation",
         reverse: true,
-        offset: 50,
-        duration: 300
+        offset: 150,
+        duration: 500
     })
     .setTween(spinner)
     .addTo(controller);
@@ -50,8 +50,8 @@ var spin_animation = new ScrollMagic.Scene ({
 var spin_text = new ScrollMagic.Scene ({
         triggerElement: ".middle-animation",
         reverse: true,
-        offset: 75,
-        duration: 300
+        offset: 130,
+        duration: 400
     })
     .setTween(spinner_text)
     .addTo(controller);
