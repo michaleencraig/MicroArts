@@ -97,11 +97,11 @@
 }
 @media(min-width: $sm-breakpoint) and (min-height: $lg-breakpoint) {
     .billboard.opening-animation .first-slide {
-        margin: 15% 0 15% 0;
+        margin: 15vh 0 15vh 0;
     }
 
     .billboard.opening-animation .load {
-        margin: 15% 0 0 0;
+        margin: 15vh 0 0 0;
     }
 }
 @media(min-width: $lg-breakpoint){
@@ -132,4 +132,17 @@
     }
 }
 @media(min-width: $xxl-breakpoint){
+}
+
+@media(max-height: $sm-breakpoint){
+    .billboard.opening-animation .first-slide {
+        margin: 2vh 0 2vh 0;
+    }
+
+    .billboard.opening-animation .load {
+        margin: 2vh 0 0 0;
+    }
+    .billboard.opening-animation .content {
+        font-size: .75em;
+    }
 }

@@ -71,3 +71,10 @@ section.title-block {
 }
 @media(min-width: $xxl-breakpoint){
 }
+
+@media(max-height: $sm-breakpoint){
+    .billboard.middle-animation {
+        max-height: 100%;
+        min-height: 100%;
+    }
+}
