@@ -15,6 +15,23 @@
 //});
 
 $(document).ready(function(){
+    $('.mobile-nav').click(function(){
+        $('.mobile .main-nav').slideToggle(250);
+    });
+});
+
+$(window).on("load resize scroll",function(e){
+    if ($('nav.desktop').is(":visible"))
+    {
+         $('.mobile').css('display', 'none');
+    }
+    else {
+        $('.mobile').css('display', 'block');
+    }
+});
+
+/*
+$(document).ready(function(){
 // Icebergs
 TweenMax.to(".floater.one-left", 18, {scale: 1.75, left: "-40%", yoyo: true, repeat: -1, ease: Power0.easeNone});
 TweenMax.to(".floater.two-left", 14, {scale: 1.5, left: "-35%", yoyo: true, repeat: -1, ease: Power0.easeNone});
@@ -23,18 +40,12 @@ TweenMax.to(".floater.two-right", 15, {scale: 1.25, right: "-28.5%", yoyo: true,
 });
 
 var spinner = new TimelineMax()
-.add(TweenMax.to(".one-third.first > img", 7.5, {rotation: -180, opacity: 1, transformOrigin:"center center", ease: Expo.easeOut, delay: .25}))
-.add(TweenMax.to(".one-third.second > img", 7.5, {rotation: -180, opacity: 1, transformOrigin:"center center", ease: Expo.easeOut, delay: .35}))
-.add(TweenMax.to(".one-third.third > img", 7.5, {rotation: -180, opacity: 1, transformOrigin:"center center", ease: Expo.easeOut, delay: .45}));
+.add(TweenMax.to(".one-third > img", .5, {rotation: -180, opacity: 1, transformOrigin:"center center", ease: Expo.easeOut}));
 
 var spinner_text = new TimelineMax()
 .add(TweenMax.to(".floater", 18, {opacity: 1, ease: Power0.easeNone}))
-.add(TweenMax.to(".middle-animation .one-third.first .title", 3.75, {opacity: 1, ease: Expo.easeOut, delay: .15}))
-.add(TweenMax.to(".middle-animation .one-third.first p", 3.75, {opacity: 1, ease: Expo.easeOut, delay: .15}))
-.add(TweenMax.to(".middle-animation .one-third.second .title", 3.75, {opacity: 1, ease: Expo.easeOut, delay: .15}))
-.add(TweenMax.to(".middle-animation .one-third.second p", 3.75, {opacity: 1, ease: Expo.easeOut, delay: .15}))
-.add(TweenMax.to(".middle-animation .one-third.third .title", 3.75, {opacity: 1, ease: Expo.easeOut, delay: .15}))
-.add(TweenMax.to(".middle-animation .one-third.third p", 3.75, {opacity: 1, ease: Expo.easeOut, delay: .15}))
+.add(TweenMax.to(".middle-animation .one-third .title", 4.75, {opacity: 1, ease: Expo.easeOut}))
+.add(TweenMax.to(".middle-animation .one-third p", 4.75, {opacity: 1, ease: Expo.easeOut}))
 
 var controller = new ScrollMagic.Controller();
 		
@@ -55,4 +66,4 @@ var spin_text = new ScrollMagic.Scene ({
     })
     .setTween(spinner_text)
     .addTo(controller);
-
+*/

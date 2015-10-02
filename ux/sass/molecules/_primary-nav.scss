@@ -1,0 +1,49 @@
+.primary-header {
+    .mobile-nav {
+        float: right;
+        cursor: pointer;
+        img {
+            position: relative;
+            top: 10px;
+        }
+        span {
+            line-height: 40px;
+            font-size: 25px;
+            @include uppercase;
+            color: $blue;
+            display: none;
+        }
+    }
+    nav.desktop {
+        display: none;
+    }
+    nav.mobile {
+        width: 100%;
+        background-color: $white;
+        ul {
+            display: none;
+            float: right;
+        }
+    }
+}
+
+@media(min-width: $xs-breakpoint) {
+    .primary-header {
+        .mobile-nav {
+            span {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+@media(min-width: $lg-breakpoint) {
+    .primary-header {
+        .mobile-nav {
+            display: none;
+        }
+        nav.desktop {
+            display: block;
+        }
+    }
+}

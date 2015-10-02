@@ -357,7 +357,7 @@
     </div>
 
     <footer class="primary-footer">
-
+        <?php include ("data/footer.php"); ?>
     </footer>
         <script src="<?php echo $scripts_dir;?>scripts.min.js"></script>
         <script type="text/javascript" src="<?php echo $scripts_dir;?>loader.js"></script>

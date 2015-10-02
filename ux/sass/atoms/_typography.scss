@@ -75,6 +75,19 @@ div.title {
     }
 }
 
+.primary-footer {
+    nav.footer ul li {
+        line-height: 1em;
+        margin: 0 .5em 0 0;
+        padding: 0 .5em;
+    }
+    address {
+        font-size: .9em;
+        line-height: 1.5em;
+        @include uppercase;
+    }
+}
+
 @media( min-width: $sm-breakpoint){
     h2.small {
         font-size: 2.5em;

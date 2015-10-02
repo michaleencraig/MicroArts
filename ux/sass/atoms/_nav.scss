@@ -3,21 +3,19 @@ nav {
     @include uppercase;
 	ul{
 		list-style: none;
-	}
-}
-
-@media(min-width: $lg-breakpoint) {
-    nav {
-        ul{
-            li {
-                display: inline-block;
-                margin: 0 .75em 0 0;
-                padding: 0 .75em;
-                line-height: 61px;
-                &:last-of-type {
-                    margin: 0;
-                }
+        li {
+            display: inline-block;
+            margin: 0 .75em 0 0;
+            padding: 0 .75em;
+            line-height: 60px;
+            &:last-of-type {
+                margin: 0;
+                padding-right: 0;
             }
         }
     }
+}
+
+@media(min-width: $lg-breakpoint) {
+
 }

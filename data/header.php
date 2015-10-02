@@ -1,27 +1,17 @@
 <header class="primary-header">
     <div class="content">
-        <a href="#" class="logo">MicroArts Creative Agency</a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Agency</a>
-                </li>
-                <li>
-                    <a href="#">Fit</a>
-                </li>
-                <li>
-                    <a href="#">Strategies &amp; Services</a>
-                </li>
-                <li>
-                    <a href="#">Results</a>
-                </li>
-                <li>
-                    <a href="#">Insights</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
+        <a href="$root_dir" class="logo">MicroArts Creative Agency</a>
+        <div class="mobile-nav">
+            <img src="../ux/imgs/nav_icon.png" alt="Menu" />
+            <span class="light">Menu</span>
+        </div>
+        <nav class="desktop">
+            <?php include ("nav.php"); ?>
+        </nav>
+    </div>
+    <div class="content">
+        <nav class="mobile">
+            <?php include ("nav.php"); ?>
         </nav>
     </div>
 </header>

@@ -11,6 +11,11 @@ html{
 	position: relative;
 	@include clearfix;
 }
+footer .left, footer .right {
+    float: left;
+}
+footer .right {
+}
 .main, .single-post .container, .blog #content {
   padding-top:$nav-height;
 }
@@ -26,7 +31,7 @@ html{
     }
 }
 
-@media( min-width: $lg-breakpoint){
+@media (min-width: $lg-breakpoint){
 	.column{
 		width: 50%;
 		float: left;
@@ -36,4 +41,12 @@ html{
 			padding-left: $content-padding*2;
 		}
 	}
+    footer .left, footer .right {
+        width: 55%;
+        margin-right: 5%;
+    }
+    footer .right {
+        width: 40%;
+        margin-right: 0;
+    }
 }

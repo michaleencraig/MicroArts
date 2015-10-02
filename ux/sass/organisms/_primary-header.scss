@@ -6,13 +6,36 @@
     padding: 20px 0;
     max-height: 101px;
     a.logo{
-        width: 304px;
+        width: 200px;
         height: 61px;
         text-indent: 200%;
         white-space: nowrap;
         overflow: hidden;
         background: url(../imgs/microarts.gif) no-repeat 0 0;
+        background-position: center center;
+        background-size: 200px;
         display: block;
         float: left;
+    }
+    .content {
+        background-color: $white;
+    }
+}
+
+@media(min-width: $xs-breakpoint){
+    .primary-header{
+        a.logo{
+            width: 250px;
+            background-size: 250px;
+        }
+    }
+}
+
+@media(min-width: $lg-breakpoint){
+    .primary-header{
+        a.logo{
+            width: 275px;
+            background-size: 275px;
+        }
     }
 }
