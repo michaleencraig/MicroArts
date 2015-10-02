@@ -1,3 +1,6 @@
+<?php
+$root_dir='http://2015.microartsdev.com';
+?>
 <ul class="main-nav">
     <li>
         <a href="#">Agency</a>
@@ -12,7 +15,7 @@
         <a href="#">Results</a>
     </li>
     <li>
-        <a href="$root_dir/insights">Insights</a>
+        <a href="<?php echo $root_dir;?>/insights">Insights</a>
     </li>
     <li>
         <a href="#">Contact</a>

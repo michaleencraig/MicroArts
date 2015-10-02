@@ -1,5 +1,5 @@
 <?php
-$root_dir='';
+$root_dir='http://2015.microartsdev.com';
 $host ='';
 if (isset($_SERVER['HTTP_HOST']) AND (!empty($_SERVER['HTTP_HOST']))) {
 	$host = $_SERVER['HTTP_HOST'];
