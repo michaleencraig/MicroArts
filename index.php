@@ -5,42 +5,22 @@
 	<body class="home">
         <?php include ("data/header.php"); ?>
 		<div class="main" role="main">
-        <div class="billboard opening-animation">
-            <div class="floater one-left"></div>
-            <div class="floater two-left"></div>
-            <div class="floater one-right"></div>
-            <div class="floater two-right"></div>
+        <div class="billboard ">
             <div class="content">
-                <section class="first-slide">
+                <div class="arrows"><img src="content/home/arrows.png"  alt=""></div>
+                <div class="intro-one">
                     <h2 class="small">Create Your</h2>
                     <h2 class="large">Brand Revolution</h2>
-                </section>
-                <section class="second-slide">
+                </div>
+                <div class="intro-two">
                     <h3 class="small">Strategy, Design, and Communications<br />to reinvent your place in the market.</h3>
-                </section>
-                <section class="load">
-                    <div class="arrow-spinner resize">
-                        <img src="ux/imgs/home/spinner.png" alt="Arrows Spinning" />
-                        <span class="scroll">Scroll</span>
-                        <div class="arrow resize">
-                            <img src="ux/imgs/home/arrow.png" alt="MicroArts Logo" />
-                        </div>
-                    </div>
-                </section>
+                </div>
             </div>
         </div>
         <div class="portfolio">
 
 <!-- -->
-          <div class="iS-Loading">
-            <div class="iS-Loadingbox">
-              <p class="iS-Loadingboxtitle">Loading</p>
-              <div class="iS-Loadingboxbar"></div>
-              <div class="iS-Loadingboxbar"></div>
-              <div class="iS-Loadingboxbar"></div>
-              <div class="iS-Loadingboxbar"></div>
-            </div>
-          </div>
+
           <div id="slide01" class="iS iS-SkinThumbnails">
           <!-- -->
           <!--Start Commands-->
@@ -305,8 +285,8 @@
 <!------------------------------------------------------------->
 
         </div> <!-- Slider Container End -->
-            
-        <div class="billboard middle-animation">
+
+<!--        <div class="billboard middle-animation">
             <div class="floater one-left"></div>
             <div class="floater two-left"></div>
             <div class="floater one-right"></div>
@@ -325,7 +305,7 @@
                             <h4 class="small light">That defines your <br/ >difference.</h4>
                             <p class="light">Stand out in a crowded market, with brand strategies that change the conversation for your audience.</p>
                         </div>
-                        
+
                     </div>
                     <div class="one-third second">
                         <img src="ux/imgs/home/spin-middle.png" alt="Arrows Spinning" />
@@ -335,7 +315,7 @@
                             <h4 class="small light">That disrupts your category.</h4>
                             <p class="light">Carve out a space you can own, with positioning, messaging, and design that redefines your place in the market.</p>
                         </div>
-                        
+
                     </div>
                     <div class="one-third third">
                         <img src="ux/imgs/home/spin-middle.png" alt="Arrows Spinning" />
@@ -345,14 +325,14 @@
                             <h4 class="small light">That defy<br/ >expectations.</h4>
                             <p class="light">Stop your audience in their tracks, with simple, memorable, and emotionally powerful brand experiences.</p>
                         </div>
-                        
+
                     </div>
                 </section>
                 <section class="action">
-                    
+
                 </section>
             </div>
-        </div>
+        </div>-->
 
     </div>
 
@@ -360,10 +340,10 @@
         <?php include ("data/footer.php"); ?>
     </footer>
         <script src="<?php echo $scripts_dir;?>scripts.min.js"></script>
-        <script type="text/javascript" src="<?php echo $scripts_dir;?>loader.js"></script>
         <script type="text/javascript" src="<?php echo $scripts_dir;?>infinitySlider.min.js"></script>
         <script>
 $(document).ready(function() {
+
   infinitySlider(
     infinitySliderId = 'slide01',
     infinitySliderCommandsClass = 'iS-Commands',
@@ -386,7 +366,56 @@ $(document).ready(function() {
     infinitySliderStarterSlide = 1
   )
 });
+
+function firstRotate(d){
+    var elem = $(".arrows");
+
+    $({deg: 0}).delay(1000).animate({deg: d}, {
+        duration: 1000,
+        step: function(now){
+            elem.css({
+                 transform: "rotate(" + now + "deg)"
+            });
+        }
+    });
+}
+function secondRotate(d){
+    var elem = $(".arrows");
+
+    $({deg: 0}).delay(5000).animate({deg: d}, {
+        duration: 1000,
+        step: function(now){
+            elem.css({
+                 transform: "rotate(" + now + "deg)"
+            });
+        }
+    });
+}
+
+  	$('.billboard').videoBG({
+		zIndex:0,
+		mp4:'ux/assets/christmas_snow.mp4',
+		ogv:'ux/assets/christmas_snow.ogv',
+		webm:'ux/assets/christmas_snow.webm',
+		poster:'ux/assets/christmas_snow.jpg',
+		opacity:.2
+	});
+
+    $(".arrows").animate({marginTop:'2%'},1000);
+    $(".intro-one").animate({'marginTop':'25%'}, "slow");
+    firstRotate(1440);
+    $('.arrows').delay(2000).animate({width: '20%',marginLeft: '100px'}, {duration: 400});
+    $(".arrows").animate({'marginTop':'30%'}, "slow");
+    $(".intro-one").delay(2800).animate({'marginTop':'6%'}, "slow");
+    $(".intro-two").delay(3400).animate({'marginTop':'20%'}, "slow");
+    secondRotate(180);
+
+
+  /*  $(".intro-two").delay(2000).animate({'top':400}, "slow");  */
+/*     $(".intro-one").delay(4000).animate({'top':100}, "slow");  */
+/*    $(".intro-two").delay(2000).animate({'top':300}, "slow");*/
         </script>
         <script type="text/javascript" src="<?php echo $scripts_dir;?>thumbnails-horizontal.js"></script>
+
 	</body>
 </html>

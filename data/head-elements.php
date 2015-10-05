@@ -13,11 +13,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="<?php echo $styles_dir;?>main.css">
     <link rel="stylesheet" href="<?php echo $styles_dir;?>font-awesome.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="<?php echo $styles_dir;?>loading-bars.css" type="text/css" media="all" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="<?php echo $scripts_dir;?>ScrollMagic.min.js"></script>
-    <script type="text/javascript" src="<?php echo $scripts_dir;?>animation.gsap.min.js"></script>
-    <script type="text/javascript" src="<?php echo $scripts_dir;?>jquery.ScrollMagic.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+    <script type="text/javascript" src="<?php echo $scripts_dir;?>jquery.videoBG.js"></script>
 </head>

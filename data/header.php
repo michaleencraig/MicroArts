@@ -1,6 +1,4 @@
-<?php
-$root_dir='http://2015.microartsdev.com';
-?>
+
 <header class="primary-header">
     <div class="content">
         <a href="<?php echo $root_dir;?>" class="logo">MicroArts Creative Agency</a>

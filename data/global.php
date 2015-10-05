@@ -1,11 +1,11 @@
 <?php
-$root_dir='http://2015.microartsdev.com';
-$host ='';
+/*$root_dir='http://2015.microartsdev.com';
+$host ='';*/
 if (isset($_SERVER['HTTP_HOST']) AND (!empty($_SERVER['HTTP_HOST']))) {
 	$host = $_SERVER['HTTP_HOST'];
 }
 if ($host == "localhost") {
-	$root_dir = 'http://localhost/microarts/html';
+	$root_dir = 'http://localhost/';
 } else {
 	$root_dir = 'http://'. $host;
 }
