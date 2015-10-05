@@ -471,7 +471,8 @@ nav ul li:last-of-type {
 
 .billboard .arrows {
   position: absolute;
-  left: 32%;
+  left: 50%;
+  margin-left: -230px;
   top: 0;
   margin-top: -100%;
 }

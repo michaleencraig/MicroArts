@@ -7,7 +7,7 @@
 		<div class="main" role="main">
         <div class="billboard ">
             <div class="content">
-                <div class="arrows"><img src="content/home/arrows.png"  alt=""></div>
+                <div align="center"><div class="arrows"><img src="content/home/arrows.png"  alt=""></div></div>
                 <div class="intro-one">
                     <h2 class="small">Create Your</h2>
                     <h2 class="large">Brand Revolution</h2>
@@ -404,8 +404,8 @@ function secondRotate(d){
     $(".arrows").animate({marginTop:'2%'},1000);
     $(".intro-one").animate({'marginTop':'25%'}, "slow");
     firstRotate(1440);
-    $('.arrows').delay(2000).animate({width: '20%',marginLeft: '100px'}, {duration: 400});
-    $(".arrows").animate({'marginTop':'30%'}, "slow");
+    $('.arrows').delay(2000).animate({width: '20%',marginLeft: '-160px'}, {duration: 400});
+    $(".arrows").animate({'marginTop':'26%'}, "slow");
     $(".intro-one").delay(2800).animate({'marginTop':'6%'}, "slow");
     $(".intro-two").delay(3400).animate({'marginTop':'20%'}, "slow");
     secondRotate(180);
