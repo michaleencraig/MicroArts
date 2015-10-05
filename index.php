@@ -404,7 +404,7 @@ function secondRotate(d){
     $(".arrows").animate({marginTop:'2%'},1000);
     $(".intro-one").animate({'marginTop':'25%'}, "slow");
     firstRotate(1440);
-    $('.arrows').delay(2000).animate({width: '20%',marginLeft: '-160px'}, {duration: 400});
+    $('.arrows').delay(2000).animate({width: '20%',marginLeft: '-10%'}, {duration: 400});
     $(".arrows").animate({'marginTop':'26%'}, "slow");
     $(".intro-one").delay(2800).animate({'marginTop':'6%'}, "slow");
     $(".intro-two").delay(3400).animate({'marginTop':'20%'}, "slow");
